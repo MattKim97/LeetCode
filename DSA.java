@@ -3,6 +3,9 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.Map;
 import java.util.Set;
+import java.util.List;
+import java.util.ArrayList;
+
 
 public class DSA {
 
@@ -67,6 +70,36 @@ public class DSA {
     // else add the number to the hashmap
     // Time complexity: O(n)
     // Space complexity: O(n)
+
+    public List<List<String>> groupAnagrams(String[] strs) {
+        // HashMap to store the sorted string as key and list of anagrams as value
+        Map<String, List<String>> anagramsMap = new HashMap<>();
+
+        for (String str : strs) {
+            // Convert the string to a character array, sort it, and then convert it back to a string
+            char[] strArr = str.toCharArray();
+            Arrays.sort(strArr);
+            String sortedStr = new String(strArr);
+
+            // If the sorted string is already a key, add the original string to its list
+            if (!anagramsMap.containsKey(sortedStr)) {
+                anagramsMap.put(sortedStr, new ArrayList<>());
+            }
+            anagramsMap.get(sortedStr).add(str);
+        }
+
+        // Create the result list from all the values in the map
+        return new ArrayList<>(anagramsMap.values());
+    }
+
+    // create a hashmap to store the sorted string as key and list of anagrams as value
+    // iterate through the array
+    // convert the string to a character array, sort it, and then convert it back to a string
+    // if the sorted string is already a key, add the original string to its list
+    // create the result list from all the values in the map
+    // Time complexity: O(n k log k)
+    // Space complexity: O(n k)
+
 
 
 }
