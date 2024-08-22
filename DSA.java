@@ -100,6 +100,47 @@ public class DSA {
     // Time complexity: O(n k log k)
     // Space complexity: O(n k)
 
+    public int[] topKFrequent(int[] nums, int k) {
+        if(nums.length == 1){
+            int [] oneAns = new int[1];
+            oneAns[0] = nums[0];
+            return oneAns;
+        }
+
+        Map<Integer, Integer> hashMap = new HashMap<>();
+
+        for(int num : nums){
+            if(!hashMap.containsKey(num)){
+                hashMap.put(num,1);
+            } else {
+                hashMap.put(num,hashMap.get(num) + 1);
+            }
+        }
+
+        int[] results = hashMap.entrySet().stream()
+            .sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed())
+            .limit(k)
+            .map(Map.Entry::getKey)
+            .mapToInt(Integer::intValue)
+            .toArray();
+
+
+
+        return results;
+    }
+
+    // create a hashmap to store the numbers
+    // iterate through the array
+    // if the number is not in the hashmap, add it
+    // else increment the value
+    // sort the hashmap by value in descending order
+    // limit the results to k
+    // convert the results to an array
+    // return the results
+    // Time complexity: O(n log n)
+    // Space complexity: O(n)
+    
+
 
 
 }
