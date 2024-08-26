@@ -9,14 +9,31 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 
 * Is Java a compiled or interpreted language?
     * Java is a compiled language
+    * A complied language is when the code is compiled once into machine code, and can be executed multiple times without the need for translation. This makes efficient code that runs faster than interpreted programs and apps, however can only run on computers with the same architecture as the computer they were compiled on
+    * An interpreted language's code is compiled on the fly each time the program is run, this make errors easier to detect but the program is slower and less efficient
+
 * What is the JDK?
-    * The JDK is the java developer kit
+    * The JDK is the java development kit, it is a bundle of software development tools and libraries,combined with the Java Runtime Environment (JRE) and Java Virtual Machine (JVM)
 * What primitive types does Java provide?
+    * Byte 
+    * Integer
+    * Boolean
+    * Char
 * What are some of the ways that a reference type differs from a primitive type?
+    * A primitive type stores teh data directly into memory, which makes them more memory-efficient and faster to access, while a reference type stores a memory address, that references the actual data in memory, this allows reference types to reference complex objects.
 * When using a debugger, what does it mean to step into a method?
+    * To stop or move execution to the first breakpoint of the debug
 * What are the parts of a method?
+    * Modifiers aka public or private
+    * the return type (return data type of the value returned by method)
+    * method name
+    * parameters
 * What does it mean to overload a method?
+    * Allowing different methods with the same name to exits by changing the method's parameters, return type, etc.
 * Can the size of an array be changed?
+    * No you cannot change the size of an array after it has been constructed,
+    however you can change the number of elements in an ArrayList whenever you want
+
 
 ### Module 2 - OOP & Testing
 
