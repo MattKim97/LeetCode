@@ -139,6 +139,40 @@ public class DSA {
     // return the results
     // Time complexity: O(n log n)
     // Space complexity: O(n)
+
+    public int[] productExceptSelf(int[] nums) {
+        int length = nums.length;
+
+int[] productLeft = new int[length];
+int[] productRight = new int[length];
+int[] product = new int[length];
+
+productLeft[0] = 1;
+for (int i = 1; i < length; i++) {
+    productLeft[i] = productLeft[i - 1] * nums[i - 1];
+}
+
+productRight[length - 1] = 1;
+for (int i = length - 2; i >= 0; i--) {
+    productRight[i] = productRight[i + 1] * nums[i + 1];
+}
+
+for (int i = 0; i < length; i++) {
+    product[i] = productLeft[i] * productRight[i];
+}
+
+return product;
+}
+
+// create three arrays to store the product of the left, right, and final product
+// iterate through the array to calculate the product of the left
+// iterate through the array to calculate the product of the right
+// iterate through the array to calculate the final product
+// return the final product
+// Time complexity: O(n)
+// Space complexity: O(n)
+
+
     
 
 
