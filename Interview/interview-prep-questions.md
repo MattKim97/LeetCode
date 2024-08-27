@@ -64,9 +64,26 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * allows for better use of reusability
     * easier use for testing
 * What is a package?
+    *  a namespace that organizes set of classes and interface, used to group related classes and interface together making to make them easier to manage
+    * also can help void naming conflicts by providing unique namespaces for each set of classes
 * What are some of the benefits of unit testing?
+    * Unit testing is where individual units or components are tested in isolation from the rest of the application
+    * a benefit is it is easier to isolate errors, and allows for improved code quality by allow developers to refactor code with greater confidence
+    * provides documentation of code
+    * facilitates continuous integration and deployment (CI/CD)
+    * reduces technical debt
 * How does an `ArrayList<E>` collection type compare to an array?
+    *  Arrays fixed length, initialized on creation
+    * ArrayList dynamically resizes itself
+    * Arrays are faster to access and have no overhead more memory efficient
+    * ArrayList slightly slower, due to dynamic resizing and have a memory overhead because it requires internal bookkeeping to dynamically resize itself
+    * Arrays can store primitive data types
+    * ArrayLists can only store objects, need to use the wrapper classes to store primitive types i.ie Integer vs int
+    * Arrays required manual handling of certain operations
+    * ArrayLists have many useful methods already builtin
 * When is it appropriate to use a `List` collection type? And a `Map` collection type?
+    * List allows duplicate elements, usually used ro ordered collections and if you allow duplicates, they are index accessed and are dynamically sized, and you can iterate through a specific order
+    * Map - maps keys to value, each key is unique and each key has one value use them for KV pairs, fast lookups, want uniqueness, and maintaining order
 
 ### Module 3 - Layers & File I/O
 
