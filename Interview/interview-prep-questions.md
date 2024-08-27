@@ -40,10 +40,29 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 * What is the difference between a class and an object?
     * A class is a blueprint for an object a set of rules, and the object is an instance of a class
 * What are the parts of a Java class?
+    * Class name
+    * the Access Modifier
+    * Optional Modifiers
+    * Fields
+    * Constructors
+    * Methods
 * What is an access modifier?
+    * A access modifier specifies the visibility of the class
+    * public, private, protected, or if not specified default package-private
 * What is an interface?
+    * It is a blueprint for classes, and how to implement the class, it specifies what the class must have, but not the how therefore only contained abstract methods
 * What are the pillars of OOP?
+    * Abstraction - simplifying complex systems by modeling classes and hiding complex implementation details, and only showing the essential features of an object
+    * Encapsulation - bundling data and methods to operate on the data into a single class. Also restrict direct access to some of the objet's inner-workings, to prevent modification or unauthorized access
+    * Polymorphism - ability of object to take on many forms, allows a single method or object to behavior differently depending on it's context
+    * Inheritance - mechanism by which classes can inherit attributes or methods of another class, allowing for class and code reuse, and creation of hierarchical relationship between classes
+
 * How does the Single Responsibility Principle relate to Java classes?
+    * states that classes should only have one responsibility or job
+    * this is cause it improves code base maintainability
+    * cleans up readability of codebase
+    * allows for better use of reusability
+    * easier use for testing
 * What is a package?
 * What are some of the benefits of unit testing?
 * How does an `ArrayList<E>` collection type compare to an array?
