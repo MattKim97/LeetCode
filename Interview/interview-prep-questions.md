@@ -38,6 +38,7 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 ### Module 2 - OOP & Testing
 
 * What is the difference between a class and an object?
+    * A class is a blueprint for an object a set of rules, and the object is an instance of a class
 * What are the parts of a Java class?
 * What is an access modifier?
 * What is an interface?

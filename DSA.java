@@ -172,6 +172,25 @@ return product;
 // Time complexity: O(n)
 // Space complexity: O(n)
 
+public boolean isPalindrome(String s) {
+    String cleanS = s.replaceAll("[^a-zA-Z0-9]", "");
+
+    StringBuilder stringBuilder = new StringBuilder(cleanS);
+
+    stringBuilder.reverse();
+
+    String reversedS = stringBuilder.toString();
+
+    return cleanS.equalsIgnoreCase(reversedS);
+}
+
+// remove all non-alphanumeric characters from the string
+// reverse the string
+// compare the original string to the reversed string
+// return the result
+// Time complexity: O(n)
+
+
 
     
 
