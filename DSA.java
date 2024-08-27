@@ -190,6 +190,38 @@ public boolean isPalindrome(String s) {
 // return the result
 // Time complexity: O(n)
 
+public int maxArea(int[] height) {
+    int maxVolume = 0;
+    int left = 0;
+    int right = height.length - 1;
+
+    while (left < right) {
+        int maxHeight = Math.min(height[left], height[right]);
+        int instVol = maxHeight * (right - left);
+        maxVolume = Math.max(maxVolume, instVol);
+
+        if (height[left] < height[right]) {
+            left++;
+        } else {
+            right--;
+        }
+    }
+
+    return maxVolume;
+}
+
+// create a variable to store the maximum volume
+// create two pointers to store the left and right indices
+// iterate through the array
+// calculate the maximum height
+// calculate the instant volume
+// update the maximum volume
+// move the pointers
+// return the maximum volume
+// Time complexity: O(n)
+// Space complexity: O(1)
+
+
 
 
     
