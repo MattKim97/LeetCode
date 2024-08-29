@@ -104,8 +104,17 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     *  The Business Logic layer, service layer, contains the core functionality and business rules of the application, processes user data received from the presentation layer, and applies the necessary business logic before passing it to the data layer
     *  The Data Access Layer (repository) - responsible for data storage and retrieval, interacts with the database performing CRUd operations and ensures the data's integrity
 * What is the repository pattern?
+    *  a design pattern used to abstract and encapsulate the data access logic within an app, provides a way to separate the data access logic from the business logic, which allows for a more organized and manageable codebase
+    *  Encapsulation - hides the details of data access from the rest of the app, the business logic layer does not need to know how the data is stored or retrieved.
+    *  Abstraction - provides a consistent and simple interface for accessing the data, regardless of the underlying data source
+    *  Decoupling, decouples business logic and data access logic which allows for easier maintenance and flexibility
 * What problem does a test double solve when writing unit tests?
+    *  allows you to not touch production data, keeping it safe from unwanted change
 * What is the MVC pattern?
+   *  A design patter used to separate the concerns of an application into three interconnected components, this helps organize code, and make it easier to manage and extend, and maintain
+   *  Model - represents the applications's data nad business logic, directly manages the data, logic and rules of the applications
+   *  View - represents the UI and how the data is presented to the user, renders the model data in a form that the user can interact with
+   *  Controllers, acts as an in-between the model and view, processes the user input, and interacts with the model to retrieve or update the data, and returns the appropriate view to the suer 
 * What is dependency injection?
 * How does dependency injection help you to create loosely coupled classes?
 
