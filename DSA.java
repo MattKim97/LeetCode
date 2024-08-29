@@ -221,6 +221,37 @@ public int maxArea(int[] height) {
 // Time complexity: O(n)
 // Space complexity: O(1)
 
+    public int maxProfit(int[] prices) {
+        int maxProfit = 0;
+        int minPrice = Integer.MAX_VALUE;
+
+        for (int i = 0; i < prices.length; i++) {
+            // Update the minimum price
+            if (prices[i] < minPrice) {
+                minPrice = prices[i];
+            }
+            // Calculate the profit if we sell at the current price
+            int profit = prices[i] - minPrice;
+            // Update the maximum profit
+            maxProfit = Math.max(maxProfit, profit);
+        }
+        return maxProfit;
+    }
+
+    // create a variable to store the maximum profit
+    // create a variable to store the minimum price
+    // iterate through the array
+    // update the minimum price
+    // calculate the profit if we sell at the current price
+    // update the maximum profit
+    // return the maximum profit
+    // Time complexity: O(n)
+    // Space complexity: O(1)
+    
+
+
+    
+
 
 
 
