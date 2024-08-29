@@ -88,11 +88,21 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 ### Module 3 - Layers & File I/O
 
 * What is an exception?
+    * an event that occurs during the execution of the app that will disrupt the normal flow of instructions, typically caused by errors or unexpected conditions such as dividing by zero, out of bounds array index, or opening a file that doesn't exists
 * What is the difference between a checked and unchecked exception?
+    * checked exceptions are exceptions that must be must be caught or declared in the method where they might be thrown such as IOException SQLException etc
+    *  a unchecked exception are those that do not need to be declared or caught, typically indicated a programming error such as NullPointerException, ArrayIndexOutOfBoundsException etc.
 * What is an enumeration?
+    *  A specific type of data that represents a group of unchangeable variables, useful when we need a fixed set of related constants
 * When should enums be used? When shouldn't they be used?
+    * When you don't need to change the enum when we have a fixed set of related constants, should not use them if the data needs to be changed or updated constantly
 * How does an application layer compare to classes and packages?
+    * An application layer are the logical separations of concerns within a software application such as UI layer, Service layer, and the Business layer
+    *  while classes are blueprints for creating instances or objects, and packages are used to contain related layers or classes together
 * What are the three layers in a minimal three layer architecture?
+    *  Presentation layer or UI layer, responsible for interacting with the layer
+    *  The Business Logic layer, service layer, contains the core functionality and business rules of the application, processes user data received from the presentation layer, and applies the necessary business logic before passing it to the data layer
+    *  The Data Access Layer (repository) - responsible for data storage and retrieval, interacts with the database performing CRUd operations and ensures the data's integrity
 * What is the repository pattern?
 * What problem does a test double solve when writing unit tests?
 * What is the MVC pattern?
