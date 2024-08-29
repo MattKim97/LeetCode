@@ -111,12 +111,15 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 * What problem does a test double solve when writing unit tests?
     *  allows you to not touch production data, keeping it safe from unwanted change
 * What is the MVC pattern?
-   *  A design patter used to separate the concerns of an application into three interconnected components, this helps organize code, and make it easier to manage and extend, and maintain
+   *  A design pattern used to separate the concerns of an application into three interconnected components, this helps organize code, and make it easier to manage and extend, and maintain
    *  Model - represents the applications's data nad business logic, directly manages the data, logic and rules of the applications
    *  View - represents the UI and how the data is presented to the user, renders the model data in a form that the user can interact with
    *  Controllers, acts as an in-between the model and view, processes the user input, and interacts with the model to retrieve or update the data, and returns the appropriate view to the suer 
 * What is dependency injection?
+    * (DI) is a design pattern that causes Inversion of Control (IoC) involves providing an object with its dependencies rather than have the object create or locate them itself
+    * this makes the system more modulate, easier to test, and more maintainable
 * How does dependency injection help you to create loosely coupled classes?
+    * by providing an object with its dependencies rather than have the object create or locate them itself
 
 ### Module 4 - Spring & Functional Idioms
 
