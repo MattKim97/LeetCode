@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Set;
 import java.util.List;
 import java.util.ArrayList;
-
+import java.util.Stack;
 
 public class DSA {
 
@@ -76,7 +76,8 @@ public class DSA {
         Map<String, List<String>> anagramsMap = new HashMap<>();
 
         for (String str : strs) {
-            // Convert the string to a character array, sort it, and then convert it back to a string
+            // Convert the string to a character array, sort it, and then convert it back to
+            // a string
             char[] strArr = str.toCharArray();
             Arrays.sort(strArr);
             String sortedStr = new String(strArr);
@@ -92,39 +93,39 @@ public class DSA {
         return new ArrayList<>(anagramsMap.values());
     }
 
-    // create a hashmap to store the sorted string as key and list of anagrams as value
+    // create a hashmap to store the sorted string as key and list of anagrams as
+    // value
     // iterate through the array
-    // convert the string to a character array, sort it, and then convert it back to a string
+    // convert the string to a character array, sort it, and then convert it back to
+    // a string
     // if the sorted string is already a key, add the original string to its list
     // create the result list from all the values in the map
     // Time complexity: O(n k log k)
     // Space complexity: O(n k)
 
     public int[] topKFrequent(int[] nums, int k) {
-        if(nums.length == 1){
-            int [] oneAns = new int[1];
+        if (nums.length == 1) {
+            int[] oneAns = new int[1];
             oneAns[0] = nums[0];
             return oneAns;
         }
 
         Map<Integer, Integer> hashMap = new HashMap<>();
 
-        for(int num : nums){
-            if(!hashMap.containsKey(num)){
-                hashMap.put(num,1);
+        for (int num : nums) {
+            if (!hashMap.containsKey(num)) {
+                hashMap.put(num, 1);
             } else {
-                hashMap.put(num,hashMap.get(num) + 1);
+                hashMap.put(num, hashMap.get(num) + 1);
             }
         }
 
         int[] results = hashMap.entrySet().stream()
-            .sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed())
-            .limit(k)
-            .map(Map.Entry::getKey)
-            .mapToInt(Integer::intValue)
-            .toArray();
-
-
+                .sorted(Map.Entry.<Integer, Integer>comparingByValue().reversed())
+                .limit(k)
+                .map(Map.Entry::getKey)
+                .mapToInt(Integer::intValue)
+                .toArray();
 
         return results;
     }
@@ -143,83 +144,84 @@ public class DSA {
     public int[] productExceptSelf(int[] nums) {
         int length = nums.length;
 
-int[] productLeft = new int[length];
-int[] productRight = new int[length];
-int[] product = new int[length];
+        int[] productLeft = new int[length];
+        int[] productRight = new int[length];
+        int[] product = new int[length];
 
-productLeft[0] = 1;
-for (int i = 1; i < length; i++) {
-    productLeft[i] = productLeft[i - 1] * nums[i - 1];
-}
-
-productRight[length - 1] = 1;
-for (int i = length - 2; i >= 0; i--) {
-    productRight[i] = productRight[i + 1] * nums[i + 1];
-}
-
-for (int i = 0; i < length; i++) {
-    product[i] = productLeft[i] * productRight[i];
-}
-
-return product;
-}
-
-// create three arrays to store the product of the left, right, and final product
-// iterate through the array to calculate the product of the left
-// iterate through the array to calculate the product of the right
-// iterate through the array to calculate the final product
-// return the final product
-// Time complexity: O(n)
-// Space complexity: O(n)
-
-public boolean isPalindrome(String s) {
-    String cleanS = s.replaceAll("[^a-zA-Z0-9]", "");
-
-    StringBuilder stringBuilder = new StringBuilder(cleanS);
-
-    stringBuilder.reverse();
-
-    String reversedS = stringBuilder.toString();
-
-    return cleanS.equalsIgnoreCase(reversedS);
-}
-
-// remove all non-alphanumeric characters from the string
-// reverse the string
-// compare the original string to the reversed string
-// return the result
-// Time complexity: O(n)
-
-public int maxArea(int[] height) {
-    int maxVolume = 0;
-    int left = 0;
-    int right = height.length - 1;
-
-    while (left < right) {
-        int maxHeight = Math.min(height[left], height[right]);
-        int instVol = maxHeight * (right - left);
-        maxVolume = Math.max(maxVolume, instVol);
-
-        if (height[left] < height[right]) {
-            left++;
-        } else {
-            right--;
+        productLeft[0] = 1;
+        for (int i = 1; i < length; i++) {
+            productLeft[i] = productLeft[i - 1] * nums[i - 1];
         }
+
+        productRight[length - 1] = 1;
+        for (int i = length - 2; i >= 0; i--) {
+            productRight[i] = productRight[i + 1] * nums[i + 1];
+        }
+
+        for (int i = 0; i < length; i++) {
+            product[i] = productLeft[i] * productRight[i];
+        }
+
+        return product;
     }
 
-    return maxVolume;
-}
+    // create three arrays to store the product of the left, right, and final
+    // product
+    // iterate through the array to calculate the product of the left
+    // iterate through the array to calculate the product of the right
+    // iterate through the array to calculate the final product
+    // return the final product
+    // Time complexity: O(n)
+    // Space complexity: O(n)
 
-// create a variable to store the maximum volume
-// create two pointers to store the left and right indices
-// iterate through the array
-// calculate the maximum height
-// calculate the instant volume
-// update the maximum volume
-// move the pointers
-// return the maximum volume
-// Time complexity: O(n)
-// Space complexity: O(1)
+    public boolean isPalindrome(String s) {
+        String cleanS = s.replaceAll("[^a-zA-Z0-9]", "");
+
+        StringBuilder stringBuilder = new StringBuilder(cleanS);
+
+        stringBuilder.reverse();
+
+        String reversedS = stringBuilder.toString();
+
+        return cleanS.equalsIgnoreCase(reversedS);
+    }
+
+    // remove all non-alphanumeric characters from the string
+    // reverse the string
+    // compare the original string to the reversed string
+    // return the result
+    // Time complexity: O(n)
+
+    public int maxArea(int[] height) {
+        int maxVolume = 0;
+        int left = 0;
+        int right = height.length - 1;
+
+        while (left < right) {
+            int maxHeight = Math.min(height[left], height[right]);
+            int instVol = maxHeight * (right - left);
+            maxVolume = Math.max(maxVolume, instVol);
+
+            if (height[left] < height[right]) {
+                left++;
+            } else {
+                right--;
+            }
+        }
+
+        return maxVolume;
+    }
+
+    // create a variable to store the maximum volume
+    // create two pointers to store the left and right indices
+    // iterate through the array
+    // calculate the maximum height
+    // calculate the instant volume
+    // update the maximum volume
+    // move the pointers
+    // return the maximum volume
+    // Time complexity: O(n)
+    // Space complexity: O(1)
 
     public int maxProfit(int[] prices) {
         int maxProfit = 0;
@@ -251,47 +253,35 @@ public int maxArea(int[] height) {
     public boolean isValid(String s) {
         Stack<Character> stack = new Stack<>();
 
-Map<Character, Character> bracketPairs = new HashMap<>();
-bracketPairs.put('(', ')');
-bracketPairs.put('{', '}');
-bracketPairs.put('[', ']');
+        Map<Character, Character> bracketPairs = new HashMap<>();
+        bracketPairs.put('(', ')');
+        bracketPairs.put('{', '}');
+        bracketPairs.put('[', ']');
 
-for (int i = 0; i < s.length(); i++) {
-    char currentBracket = s.charAt(i);
+        for (int i = 0; i < s.length(); i++) {
+            char currentBracket = s.charAt(i);
 
-    if (bracketPairs.containsKey(currentBracket)) {
-        stack.push(currentBracket);
-    } else {
-        // Check if stack is empty or if the popped character does not match
-        if (stack.isEmpty() || bracketPairs.get(stack.pop()) != currentBracket) {
-            return false;
+            if (bracketPairs.containsKey(currentBracket)) {
+                stack.push(currentBracket);
+            } else {
+                // Check if stack is empty or if the popped character does not match
+                if (stack.isEmpty() || bracketPairs.get(stack.pop()) != currentBracket) {
+                    return false;
+                }
+            }
         }
+
+        return stack.isEmpty();
     }
-}
 
-return stack.isEmpty();
-}
-
-// create a stack to store the brackets
-// create a hashmap to store the bracket pairs
-// iterate through the string
-// if the bracket is an opening bracket, push it to the stack
-// else check if the stack is empty or if the popped character does not match
-// return false
-// return true if the stack is empty
-// Time complexity: O(n)
-// Space complexity: O(n)
-
-    
-
-
-    
-
-
-
-
-    
-
-
+    // create a stack to store the brackets
+    // create a hashmap to store the bracket pairs
+    // iterate through the string
+    // if the bracket is an opening bracket, push it to the stack
+    // else check if the stack is empty or if the popped character does not match
+    // return false
+    // return true if the stack is empty
+    // Time complexity: O(n)
+    // Space complexity: O(n)
 
 }
