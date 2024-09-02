@@ -247,6 +247,41 @@ public int maxArea(int[] height) {
     // return the maximum profit
     // Time complexity: O(n)
     // Space complexity: O(1)
+
+    public boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+
+Map<Character, Character> bracketPairs = new HashMap<>();
+bracketPairs.put('(', ')');
+bracketPairs.put('{', '}');
+bracketPairs.put('[', ']');
+
+for (int i = 0; i < s.length(); i++) {
+    char currentBracket = s.charAt(i);
+
+    if (bracketPairs.containsKey(currentBracket)) {
+        stack.push(currentBracket);
+    } else {
+        // Check if stack is empty or if the popped character does not match
+        if (stack.isEmpty() || bracketPairs.get(stack.pop()) != currentBracket) {
+            return false;
+        }
+    }
+}
+
+return stack.isEmpty();
+}
+
+// create a stack to store the brackets
+// create a hashmap to store the bracket pairs
+// iterate through the string
+// if the bracket is an opening bracket, push it to the stack
+// else check if the stack is empty or if the popped character does not match
+// return false
+// return true if the stack is empty
+// Time complexity: O(n)
+// Space complexity: O(n)
+
     
 
 
