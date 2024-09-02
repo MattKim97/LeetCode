@@ -133,7 +133,12 @@ _Assume that all of the questions with this section pertain to Java (unless othe
      *  such as @Component, @Autowired, @Bean @Configurations
      *  Dependencies are injected directly into fields, methods, or constructors
 * What is a lambda or anonymous method?
+    * a function or block of code that can be defined without being bound to an identifier, like no name, used to create short concise functions that are passed as arguments, or used within other methods can be used within collections
 * How does using the Streams API to solve a data related problem compare to writing imperative code (loops, conditional statements, etc.)?
+    * offers a functional programming approach compared to the more traditional imperative style, which uses loops and conditional statements
+    * Streams are more concise due to chaining operations like filtering, mapping, and reducing.
+    * Declarative, expresses the what rather than the how
+    * Readable, streams make code more readable by clearly expressing the transformation of data.
 
 ## Part 2: Java Database and Web Dev
 
