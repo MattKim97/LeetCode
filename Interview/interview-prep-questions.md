@@ -126,6 +126,12 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 * Why was it necessary for Java to include the `BigDecimal` type?
     *  to represent non-integer numbers, with a precision limited only by the computer's memory. BigDecimal is generally more accurate than the more commonly used primitive double data type, and is able to represent a greater range of values.
 * What are the some of the major differences between implementing Spring DI using XML configuration vs using annotations?
+     *  XML is done in a XML file, such as applicationContext.xml
+     *  need to explicitly define beans using XML tags
+     *  all dependencies and properties are wired within the xml file
+     *  Using Annotations, configured directly in the Java classes using annotations
+     *  such as @Component, @Autowired, @Bean @Configurations
+     *  Dependencies are injected directly into fields, methods, or constructors
 * What is a lambda or anonymous method?
 * How does using the Streams API to solve a data related problem compare to writing imperative code (loops, conditional statements, etc.)?
 
