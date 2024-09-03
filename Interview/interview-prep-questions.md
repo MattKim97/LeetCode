@@ -145,7 +145,9 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 ### Module 6 - Docker and Relational Databases
 
 * What is normalization?
+    * Data normalization, is the process of organizing the fields and tables of a relational database to minimize the redundancy and dependency
 * What are primary and foreign keys, and what are the relationship between them?
+    * a primary key is a unique identifier for each record in a database table
 * What are the four kinds of relationships tables can have with other tables?
 * What are the ACID guaratees?
 * What are some common data types in SQL?
