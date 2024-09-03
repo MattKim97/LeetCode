@@ -150,11 +150,11 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * a primary key is a unique identifier for each record in a database table
     * a foreign key in one table uniquely identifies a row of another table, this establishes and enforces a link between the data within two tables
 * What are the four kinds of relationships tables can have with other tables?
-    * 
-    * 
-    * 
-    * 
-* What are the ACID guaratees?
+    * One-to-one (1:1) Relationship, a single record in one table is associated with a single record another table , each row in both tables corresponds directly to one and only one row in the other table
+    * One-to-Many (1:N) Relationship - in a one-to-many relationship, a single record in one table can be associated with one or more records in another table, however each record in the related table can be associated with only one record in the first table
+    * Many-to-One (N:1) Relationship - A many-to-one relationship is the inverse of a one to many relationship, manes many records in one table can be related to a single record in another table
+    * Many-to-Many (N:N) Relationship - In a many-to-many relationship, multiple records in one table can be associated with multiple records in another table. This relationship is ofter represented by a join table.
+* What are the ACID guarantees?
 * What are some common data types in SQL?
 * What are joins in SQL?
 
