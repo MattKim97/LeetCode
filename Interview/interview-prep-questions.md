@@ -167,6 +167,11 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * Binary Data Types
     * Enum
 * What are joins in SQL?
+    * joins are used to combine rows from two or more tables based on a related column between them, allows us to retrieve data spread across multiple tables in a meaningful way.
+    * INNER JOIN - retrieves only the rows that have matching values within both tables, no match, that row is excluded from the row
+    * LEFT OUTER JOIN - returns ALL the rows from the left table, if there is not match returns NULL for the right table's results
+    * RIGHT OUTER JOIN - returns ALL the rows from the right table, if theres is not a match returns NULL for the left table's results
+    * FULL OUTER JOIN - returns ALL rows from both tables, if theres is no match, it returns null for columns where a match is missing for EITHER table
 
 ### Module 7 - Java Database Connectivity and REST with Spring Boot
 
