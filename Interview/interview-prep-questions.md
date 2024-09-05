@@ -155,6 +155,7 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * Many-to-One (N:1) Relationship - A many-to-one relationship is the inverse of a one to many relationship, manes many records in one table can be related to a single record in another table
     * Many-to-Many (N:N) Relationship - In a many-to-many relationship, multiple records in one table can be associated with multiple records in another table. This relationship is ofter represented by a join table.
 * What are the ACID guarantees?
+    * Atomicity - each transaction is treated as a single, indivisible unit, all operations within the transaction are completed successfully or none are applied. If any part of the transaction fails, the entire transaction is rolled back to its original state
 * What are some common data types in SQL?
 * What are joins in SQL?
 
