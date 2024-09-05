@@ -157,6 +157,15 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 * What are the ACID guarantees?
     * Atomicity - each transaction is treated as a single, indivisible unit, all operations within the transaction are completed successfully or none are applied. If any part of the transaction fails, the entire transaction is rolled back to its original state
 * What are some common data types in SQL?
+    * Int, SmallInt, BigInt
+    * Decimal or Numeric
+    * Float
+    * Real
+    * String Data Type
+    * Date and Time Data Type
+    * Boolean
+    * Binary Data Types
+    * Enum
 * What are joins in SQL?
 
 ### Module 7 - Java Database Connectivity and REST with Spring Boot
