@@ -179,9 +179,26 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * A JDBC driver is a software component that enables Java applications to interact with databases using the Java Database Connectivity (JDBC) API. Act's sort of like a bridge between the Java application and the database, and translates Java method calls (SQL queries, updates, etc.) into database-specific commands.
     * Manages the communication between the application and the database
 * What are some of the advantages of Spring's JdbcTemplate?
+    * JdbcTemplate is a core component of the Spring Frameworks's JDBC abstraction, simplifying database access and reducing boilerplate code
+    1. Simplified code, eliminated much of the repetitive boilerplate code
+    2. Exception Handling - translates SQL exceptions into Spring's runtime exceptions (checked SQLException -> DataAccessException) - this makes exception handling way more flexible, and allows us to handle errors consistently
+    3. Query Parameterization - supports parameterized queries, which prevents SQL injection attacks and ensures that parameters are safely handled -> allows us to use ? placeholders and pass parameter values, which makes queries more readable and secure
+    4. RowMapper and ResultSet Extractor - provides flexible APIs for mapping database rows to Java objects
+    5. Support for Batch Processing
+    6. Callback Mechanism for Custom Logic
+    7. Transaction Management
+    8. Support for Stored Procedures and Callable Statements
+    9. Declarative SQL Execution
 * What are some common HTTP request methods?
+    * GET - retrieve data from the server
+    * POST - send data to the server to create or update a resource
+    * PUT - Update or replace an existing resource on the server
+    * PATCH - Partially update a resource
+    * DELETE - Remove a resource from the server
 * What does a typical HTTP request and response look like?
+    * 
 * What does the status code 200 mean?
+    * 
 * What are RESTful services?
 * What are some differences between PUT and POST methods?
 * What are some advantages to using Spring Boot?
