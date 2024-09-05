@@ -176,6 +176,8 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 ### Module 7 - Java Database Connectivity and REST with Spring Boot
 
 * What is a JDBC driver?
+    * A JDBC driver is a software component that enables Java applications to interact with databases using the Java Database Connectivity (JDBC) API. Act's sort of like a bridge between the Java application and the database, and translates Java method calls (SQL queries, updates, etc.) into database-specific commands.
+    * Manages the communication between the application and the database
 * What are some of the advantages of Spring's JdbcTemplate?
 * What are some common HTTP request methods?
 * What does a typical HTTP request and response look like?
