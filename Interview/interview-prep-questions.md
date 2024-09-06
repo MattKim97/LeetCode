@@ -196,9 +196,10 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * PATCH - Partially update a resource
     * DELETE - Remove a resource from the server
 * What does a typical HTTP request and response look like?
-    * 
+    * usually have a Request Line, Headers, and Body(optional)
+    * GET /api/users/123 HTTP/1.1
 * What does the status code 200 mean?
-    * 
+    * means OK which indicates that the client's request was successful received, understood, and was processed by the server, this is the most common HTTP status code, and this is used to signal that everything is working as expected
 * What are RESTful services?
 * What are some differences between PUT and POST methods?
 * What are some advantages to using Spring Boot?
