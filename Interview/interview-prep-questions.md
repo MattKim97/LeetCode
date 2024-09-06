@@ -212,10 +212,18 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * PUT is Idempotent, used to update or replace an existing resource, or create a new resource at a specific URI if it doesn't exist, same PUT request is sent multiple times, the result remains the same, location specific, specifies the exact location URI and where the resource should be created or updated
     * POST - Non-idempotent, used to create new resources, same POST request is sent multiple times, can result in the creation of multiple resources (non-idempotent behavior) - and is server controlled, server will decide the location (URI) where the resource is created, the client won't specify it directly
 * What are some advantages to using Spring Boot?
-    * Spring Boot is an extension of the Spring framwork that simplifies the development of Java applications, especially when building microservers and web-based applications
+    * Spring Boot is an extension of the Spring framework that simplifies the development of Java applications, especially when building microservices and web-based applications
     1. Rapid Application development
         * Auto-Configuration - automatically configures Spring and third-part libraries base on the dependencies included in your project
+        * Embedded Servers - Tomcat, Jetty, Undertow, run as a standalone executable JAR
+        * Minimal Configuration - defaults nad auto config
+    2. Microservices-Friendly
+    3. Reduced Boilerplate Code
+    4. Starter Dependencies
+    5. Production-Ready-Features
+    6. Easy Testing
 * What does an Embedded Server mean in Spring Boot?
+    * Embedded Servers: Spring Boot comes with embedded servers like Tomcat, Jetty, and Undertow, allowing you to run the application as a standalone executable JAR without needing an external application server.
 * What does the annotation `@SpringBootApplication` do?
 * What is CORS and how is it useful?
 
