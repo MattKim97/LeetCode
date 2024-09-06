@@ -225,6 +225,10 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 * What does an Embedded Server mean in Spring Boot?
     * Embedded Servers: Spring Boot comes with embedded servers like Tomcat, Jetty, and Undertow, allowing you to run the application as a standalone executable JAR without needing an external application server.
 * What does the annotation `@SpringBootApplication` do?
+    * a key feature in Spring Boot, serves as a convenient shortcut that combines three important annotations to simplify the configuration of Spring applications, typically placed on the main class that bootstraps the Spring Boot application.
+    * Configuration - designates class as a source of bean definitions
+    * EnableAutoConfiguration - auto-configuration, automatically configures Spring and Third-party libraries based on the dependencies present within the class-path
+    * ComponentScan - allowing Spring to automatically detect and register beans that are annotated with @Component, @Service, @Repository, @Controller
 * What is CORS and how is it useful?
 
 ### Module 8 - Front End Development
