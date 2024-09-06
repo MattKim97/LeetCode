@@ -229,7 +229,10 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * Configuration - designates class as a source of bean definitions
     * EnableAutoConfiguration - auto-configuration, automatically configures Spring and Third-party libraries based on the dependencies present within the class-path
     * ComponentScan - allowing Spring to automatically detect and register beans that are annotated with @Component, @Service, @Repository, @Controller
+    * It ensures that Spring picks up all the components in your application and wires them into the application context.
 * What is CORS and how is it useful?
+    * CORS(Cross-Origin Reroute Sharing) is a security mechanism that allows web applications running on one domain(or origin) to request resources from a server on a different domain. It is enforced by web browseres to prevent security risks, such as malicious scripts on one site accessing sensitive data from another site without permission
+    * CORS is essential for ensuring secure and controlled cross-origin communication in web applications. It allows servers to specify which domains can access their resources, enabling safe resource sharing across different origins while protecting against security risks like cross-site request forgery (CSRF).
 
 ### Module 8 - Front End Development
 
