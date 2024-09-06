@@ -198,6 +198,7 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 * What does a typical HTTP request and response look like?
     * usually have a Request Line, Headers, and Body(optional)
     * GET /api/users/123 HTTP/1.1
+    * HTTP/1.1 404 Not Found
 * What does the status code 200 mean?
     * means OK which indicates that the client's request was successful received, understood, and was processed by the server, this is the most common HTTP status code, and this is used to signal that everything is working as expected
 * What are RESTful services?
