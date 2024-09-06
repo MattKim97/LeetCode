@@ -202,8 +202,19 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 * What does the status code 200 mean?
     * means OK which indicates that the client's request was successful received, understood, and was processed by the server, this is the most common HTTP status code, and this is used to signal that everything is working as expected
 * What are RESTful services?
+    * web-services that adhere to the principles of Representational State Transfer(REST), this is a software architectural style which is designed for scalable and flexible web applications.
+    * allows systems to communicate over HTTP by making use of standard HTTP methods like GET,POST,PUT,DELETE, and others
+    * Statelessness
+    * Client-Server Architecture
+    * Resources and URIs (Uniform Resource Identifiers)
+    * HTTP Methods
 * What are some differences between PUT and POST methods?
+    * PUT is Idempotent, used to update or replace an existing resource, or create a new resource at a specific URI if it doesn't exist, same PUT request is sent multiple times, the result remains the same, location specific, specifies the exact location URI and where the resource should be created or updated
+    * POST - Non-idempotent, used to create new resources, same POST request is sent multiple times, can result in the creation of multiple resources (non-idempotent behavior) - and is server controlled, server will decide the location (URI) where the resource is created, the client won't specify it directly
 * What are some advantages to using Spring Boot?
+    * Spring Boot is an extension of the Spring framwork that simplifies the development of Java applications, especially when building microservers and web-based applications
+    1. Rapid Application development
+        * Auto-Configuration - automatically configures Spring and third-part libraries base on the dependencies included in your project
 * What does an Embedded Server mean in Spring Boot?
 * What does the annotation `@SpringBootApplication` do?
 * What is CORS and how is it useful?
