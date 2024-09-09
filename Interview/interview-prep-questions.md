@@ -237,7 +237,9 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 ### Module 8 - Front End Development
 
 * What's the difference between the == and === operators?
+    * == means soft equality, so type of data doesn't matter just value, while === is strict equality, meaning data type and value must match for it to be true.
 * Can you explain what type coercion is in JavaScript?
+    * this is what happens when JavaScript automatically converts the values from one data type to another, implicit coercion is when JS automatically converts a value to another type without explicit instruction from the developer such as adding a integer and string number together, Explicit coercion is when u manually convert a value form one type to another using built-in JS functions such as Number() and String()
 * What is a closure in JavaScript?
 * What are some differences between Java and JavaScript?
 * What is the `this` keyword in JavaScript?
