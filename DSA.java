@@ -284,4 +284,27 @@ public class DSA {
     // Time complexity: O(n)
     // Space complexity: O(n)
 
+    // public ListNode reverseList(ListNode head) {
+    //     ListNode previous = null; 
+    //     ListNode current = head;   
+    //     ListNode next = null;   
+
+    //     while (current != null) {
+    //         next = current.next;   
+    //         current.next = previous; 
+    //         previous = current;    
+    //         current = next;         
+    //     }
+
+    //     return previous;    
+    // }
+
+    // create three pointers to store the previous, current, and next nodes
+    // iterate through the linked list
+    // update the pointers
+    // return the previous node
+    // Time complexity: O(n)
+    // Space complexity: O(1)
+
+
 }
