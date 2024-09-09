@@ -241,7 +241,15 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 * Can you explain what type coercion is in JavaScript?
     * this is what happens when JavaScript automatically converts the values from one data type to another, implicit coercion is when JS automatically converts a value to another type without explicit instruction from the developer such as adding a integer and string number together, Explicit coercion is when u manually convert a value form one type to another using built-in JS functions such as Number() and String()
 * What is a closure in JavaScript?
+    * a closure is a feature where a inner function has access to the variables from its outer(enclosing) functions, even after the outer function has finished executing, this is to allow the inner function to remember the environment in which it wa created.
+    * A closure has access to:
+    * Variables defined within its own scope.
+    * Variables defined in its outer function’s scope.
+    * Global variables.
 * What are some differences between Java and JavaScript?
+    * Java is a compiled language while JavaScript is a interpreted language
+    * oop language, allows developers to write code that can run on multiple platforms (write once run anywhere) mostly used for backend development
+    * JavaScript is mainly used for adding interactivity to webpages, mostly used in web development for both client-side and server-side with Node.js
 * What is the `this` keyword in JavaScript?
 * Can you pass a function as an argument to another function?
 * In JavaScript, what is the difference between null and undefined?
