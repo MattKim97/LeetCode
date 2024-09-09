@@ -306,51 +306,49 @@ public class DSA {
     // Time complexity: O(n)
     // Space complexity: O(1)
 
-    public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
-        ListNode current1 = list1;
-        ListNode current2 = list2;
-        ListNode next1 = null;
-        ListNode next2 = null;
-        ListNode head = null;
+    // public ListNode mergeTwoLists(ListNode list1, ListNode list2) {
+    //     ListNode current1 = list1;
+    //     ListNode current2 = list2;
+    //     ListNode head = null;
         
-        if (list1 == null && list2 == null) {
-            return null; 
-        }
-        if (list1 == null) {
-            return list2; 
-        }
-        if (list2 == null) {
-            return list1; 
-        }
-        if (list1.val < list2.val) {
-            head = list1;
-            current1 = current1.next;
-        } else {
-            head = list2;
-            current2 = current2.next;
-        }
+    //     if (list1 == null && list2 == null) {
+    //         return null; 
+    //     }
+    //     if (list1 == null) {
+    //         return list2; 
+    //     }
+    //     if (list2 == null) {
+    //         return list1; 
+    //     }
+    //     if (list1.val < list2.val) {
+    //         head = list1;
+    //         current1 = current1.next;
+    //     } else {
+    //         head = list2;
+    //         current2 = current2.next;
+    //     }
 
-        ListNode tail = head;
+    //     ListNode tail = head;
 
-        while (current1 != null && current2 != null) {
-            if (current1.val < current2.val) {
-                tail.next = current1;
-                current1 = current1.next;
-            } else {
-                tail.next = current2;
-                current2 = current2.next;
-            }
-            tail = tail.next;
-        }
+    //     while (current1 != null && current2 != null) {
+    //         if (current1.val < current2.val) {
+    //             tail.next = current1;
+    //             current1 = current1.next;
+    //         } else {
+    //             tail.next = current2;
+    //             current2 = current2.next;
+    //         }
+    //         tail = tail.next;
+    //     }
 
-        if (current1 != null) {
-            tail.next = current1;
-        } else if (current2 != null) {
-            tail.next = current2;
-        }
+    //     if (current1 != null) {
+    //         tail.next = current1;
+    //     } else if (current2 != null) {
+    //         tail.next = current2;
+    //     }
 
-        return head; 
-    }
+    //     return head; 
+    // }
 
     // create pointers to store the current and next nodes for both lists
     // create a pointer to store the head of the merged list
@@ -365,7 +363,7 @@ public class DSA {
     // return the head
     // Time complexity: O(n)
     // Space complexity: O(1)
-    
+
 
 
 }
