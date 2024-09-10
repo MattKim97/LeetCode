@@ -251,6 +251,13 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * oop language, allows developers to write code that can run on multiple platforms (write once run anywhere) mostly used for backend development
     * JavaScript is mainly used for adding interactivity to webpages, mostly used in web development for both client-side and server-side with Node.js
 * What is the `this` keyword in JavaScript?
+    * the this keyword refers to the object it belongs to, and the value is determined based on the context in which it is used. the behavior of this changed depending on where and how it is called
+    * global context, this refers to the global object, window in browsers, and global in Node
+    * inside a function in non-strict mode, when a regular function is called, this refers to the global object. In strict mode ('use strict'), this is undefined.
+    * Inside a method, this refers to the object the method belongs to.
+    * Arrow functions do not have their own this value. Instead, they inherit this from the enclosing lexical context.
+    * When used in event handlers, this refers to the element that triggered the event.
+    * You can explicitly set the value of this using call(), apply(), or bind().
 * Can you pass a function as an argument to another function?
 * In JavaScript, what is the difference between null and undefined?
 * What is a promise in JavaScript?
