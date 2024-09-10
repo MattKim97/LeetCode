@@ -364,6 +364,50 @@ public class DSA {
     // Time complexity: O(n)
     // Space complexity: O(1)
 
+    //     public void reorderList(ListNode head) {
+    // if (head == null || head.next == null) return;
+
+    // // Step 1: Find the middle of the list using slow and fast pointers
+    // ListNode slow = head, fast = head;
+    // while (fast != null && fast.next != null) {
+    //     slow = slow.next;
+    //     fast = fast.next.next;
+    // }
+
+    // // Step 2: Reverse the second half of the list
+    // ListNode prev = null, current = slow, temp = null;
+    // while (current != null) {
+    //     temp = current.next;
+    //     current.next = prev;
+    //     prev = current;
+    //     current = temp;
+    // }
+
+    // // Step 3: Merge the two halves
+    // ListNode first = head, second = prev;
+    // while (second.next != null) {
+    //     temp = first.next;
+    //     first.next = second;
+    //     first = temp;
+
+    //     temp = second.next;
+    //     second.next = first;
+    //     second = temp;
+    // }
+    // }
+
+    // create two pointers to store the slow and fast nodes
+    // iterate through the list to find the middle node
+    // create three pointers to store the previous, current, and next nodes
+    // iterate through the second half of the list to reverse it
+    // create two pointers to store the first and second halves of the list
+    // iterate through the list to merge the two halves
+    // Time complexity: O(n)
+    // Space complexity: O(1)
+
+
+
+
 
 
 }
