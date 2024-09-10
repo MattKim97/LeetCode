@@ -405,6 +405,30 @@ public class DSA {
     // Time complexity: O(n)
     // Space complexity: O(1)
 
+    // public TreeNode invertTree(TreeNode root) {
+
+    //     if(root == null){
+    //         return root;
+    //     }
+
+    // TreeNode temp = root.left;
+    // root.left = root.right;
+    // root.right = temp;
+    // invertTree(root.left);
+    // invertTree(root.right);
+
+    // return root; 
+    // }
+
+    // check if the root is null
+    // create a temporary node to store the left node
+    // swap the left and right nodes
+    // recursively call the function on the left and right nodes
+    // return the root
+    // Time complexity: O(n)
+    // Space complexity: O(n)
+
+
 
 
 
