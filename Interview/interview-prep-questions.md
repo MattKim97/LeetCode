@@ -259,7 +259,10 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * When used in event handlers, this refers to the element that triggered the event.
     * You can explicitly set the value of this using call(), apply(), or bind().
 * Can you pass a function as an argument to another function?
-* In JavaScript, what is the difference between null and undefined?
+    * yes in JS and many other programming languages, you can pass a function as an argument to another function, functions in JS are first-class objects, meaning they are treated like any other value, passed as arguments, returned from other functions, and can be stored in variables, commonly used in callbacks
+* In JavaScript, what is the difference between null and undefined?\
+    * undefined is a primitive type, represents a variables that has been declared but not yet assigned a value
+    * null is also a primitive type, but denotes nothing or empty, represents itself as a special value of nothingness
 * What is a promise in JavaScript?
 * What are the states of a promise?
 
