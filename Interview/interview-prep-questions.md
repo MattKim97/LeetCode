@@ -264,7 +264,11 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * undefined is a primitive type, represents a variables that has been declared but not yet assigned a value
     * null is also a primitive type, but denotes nothing or empty, represents itself as a special value of nothingness
 * What is a promise in JavaScript?
+    * A Promise is an object that represents the eventual completion or failure or an asynchronous operation and its resulting value, it is a way to handle async operations more efficiently rather than using callbacks, which provide a cleaner and more structured approach
 * What are the states of a promise?
+    * Pending: The initial state, meaning the operation has not yet completed, and its result is not yet available.
+    * Fulfilled: The operation completed successfully, and the promise has a resolved value.
+    * Rejected: The operation failed, and the promise has a reason for the failure (an error).
 
 ### Module 9 - React
 
