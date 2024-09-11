@@ -1,0 +1,25 @@
+public int[] kFreqElements(int[] numb, int k) {
+    List<Integer> solutions = new ArrayList<>();
+    Map<Integer, Integer> hashMap = new HashMap<>();
+
+    // Count the frequency of each number
+    for (int number : numb) {
+        hashMap.put(number, hashMap.getOrDefault(number, 0) + 1);
+    }
+
+    // Convert the entrySet into a list for sorting
+    List<Map.Entry<Integer, Integer>> entries = new ArrayList<>(hashMap.entrySet());
+    
+    // Sort entries by value in descending order
+    entries.sort((a, b) -> b.getValue() - a.getValue());
+
+    // Extract the top k frequent elements
+    for (int i = 0; i < k; i++) {
+        solutions.add(entries.get(i).getKey());
+    }
+
+    // Convert solutions list to an array
+    return solutions.stream().mapToInt(i -> i).toArray();
+}
+
+    

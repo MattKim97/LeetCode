@@ -93,8 +93,7 @@ public class DSA {
         return new ArrayList<>(anagramsMap.values());
     }
 
-    // create a hashmap to store the sorted string as key and list of anagrams as
-    // value
+    // create a hashmap to store the sorted string as key and list of anagrams as value
     // iterate through the array
     // convert the string to a character array, sort it, and then convert it back to
     // a string
