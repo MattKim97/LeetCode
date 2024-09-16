@@ -300,7 +300,8 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * Allows navigation between different views or pages within a React applications
     * Mainly used for building single-page applications(SPAs) and allowing dynamic navigation and URL management
 * What is the purpose of React Context?
-
+    * A feature within React that provides a way to share values or a "global" state across components without having to prop-drill manually to each level.
+    * It is designed to manage data that needs to be accessible by multiple components, such as user information, theme settings, or app-wide configurations, without the need for "prop drilling.
 ### Module 10 - Security
 
 * What are authentication and authorization, and which needs to come first?
