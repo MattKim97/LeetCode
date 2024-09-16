@@ -286,7 +286,15 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * Babel is a JS compiler that is used to convert modern JS (such as newer ECMAScript and JSX) into a form that can be understood by older browsers and environments.
     * Babel boiled down basically ensures that your JS code works across multiple different browsers, even if they do not support the newest version of JS.
 * What are some differences between ES6 syntax from ES5?
+    * Let and Const vs Var
+    * Arrow functions - const add = (a, b) => a + b;
+    * Template literals - const greeting = `Hello ${name}!`;
+    * Classes
+    * Default parameters
+    * Rest and Spread operators
+    * Promises
 * What are React Hooks?
+    * React hooks
 * What is React Router used for?
 * What is the purpose of React Context?
 
