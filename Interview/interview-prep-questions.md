@@ -294,8 +294,11 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * Rest and Spread operators
     * Promises
 * What are React Hooks?
-    * React hooks
+    * React hooks are functions that allow you to use state and other React features in functional components, without having to use class components.
+    * Allows us to "hook into" React's life cycle and state management within functional components, which improves power and flexibility of our app.
 * What is React Router used for?
+    * Allows navigation between different views or pages within a React applications
+    * Mainly used for building single-page applications(SPAs) and allowing dynamic navigation and URL management
 * What is the purpose of React Context?
 
 ### Module 10 - Security
