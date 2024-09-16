@@ -273,6 +273,9 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 ### Module 9 - React
 
 * What is JSX?  Can JSX be read by a web browser?
+    * JSX (JavaScript XML) - is a syntax extension, commonly used with React, in-order to describe what the UI should look like
+    * web browsers can, not directly read or understand JSX, browsers can only interpret plain JS, HTML and CSS, it needs to be transformed into regular JavaScript before it can run in the browsers
+    * This transformation is typically done by tools like Babel, which is a JS compiler that converts JSX into JS
 * In React, what is state and how is it used?
 * What is Babel used for?
 * What are some differences between ES6 syntax from ES5?
