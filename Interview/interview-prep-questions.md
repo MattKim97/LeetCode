@@ -277,7 +277,14 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * web browsers can, not directly read or understand JSX, browsers can only interpret plain JS, HTML and CSS, it needs to be transformed into regular JavaScript before it can run in the browsers
     * This transformation is typically done by tools like Babel, which is a JS compiler that converts JSX into JS
 * In React, what is state and how is it used?
+    * State is an object that holds data that can change over time and influences how a component renders, 
+    * one of the core features in React, for managing dynamic data within a component
+    * Stateful Components: Components that manage their own internal state. When the state changes, the component re-renders to reflect the updated data.
+    * Updating State: React provides the setState function (or useState in function components) to update the state. When state is updated, React automatically re-renders the component with the new data.
+    * Local to the Component: Each component can manage its own state, which means state is local to the component where it’s defined.
 * What is Babel used for?
+    * Babel is a JS compiler that is used to convert modern JS (such as newer ECMAScript and JSX) into a form that can be understood by older browsers and environments.
+    * Babel boiled down basically ensures that your JS code works across multiple different browsers, even if they do not support the newest version of JS.
 * What are some differences between ES6 syntax from ES5?
 * What are React Hooks?
 * What is React Router used for?
