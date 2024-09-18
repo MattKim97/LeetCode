@@ -305,7 +305,11 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 ### Module 10 - Security
 
 * What are authentication and authorization, and which needs to come first?
+    * Authentication is the process above verifying the identify of a user
+    * Authorization determines what the authenticated user is allowed to do
+* Authentication needs to come first because the system must know who the user is before determining what they are allowed to do.
 * What is JWT?
+    * 
 * What is the structure of a JWT?
 * How does a security filter chain work in Spring?
 * Why are roles useful in security?
