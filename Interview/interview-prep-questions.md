@@ -323,6 +323,18 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     4. Exception handling: If any security issues arise (like failed authentication), they are handled.
     5. Response passes back through the filter chain, and the security context is cleaned up if necessary.
 * Why are roles useful in security?
+    1. Simplify Authorization - reduces complexity
+    2. Separation of Responsibilities
+    3. Scalability
+    4. Security Auditing and Compliance
+    5. Enforcing Organizational Policies
+    6. Dynamic role assignment
+    7. Cross-Application Consistency
 * How should passwords be stored?
+    * Store them using hashed passwords
+    * Salt and peppering the passwords
+    * Never store plain-text passwords: Passwords should never be stored as plain text in any system, as this would make it easy for attackers to compromise all user accounts in case of a breach.
+    * No reversible encryption: Avoid encrypting passwords with symmetric or reversible encryption. If the encryption key is compromised, all passwords can be decrypted. Hashing is one-way and doesn't allow retrieval of the original password.
+    * Use a password policy: Ensure that users create strong passwords by enforcing minimum length, complexity, and character variety (e.g., numbers, symbols, and upper/lowercase letters).
 
 [Return to Home](../README.md)
