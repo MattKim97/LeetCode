@@ -309,8 +309,12 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * Authorization determines what the authenticated user is allowed to do
 * Authentication needs to come first because the system must know who the user is before determining what they are allowed to do.
 * What is JWT?
-    * 
+    * a JSON Web Token, used tor securely transmitting information between parties as a JSON object.
 * What is the structure of a JWT?
+    * Consists of three parts separated by dots
+    * Header, containing the metadata about the token, including type of token and the signing algorithm
+    * Payload, contains the claims which are statements above the user or any other data - common claims includes userID, expiration time and roles
+    * Signature, created by signing the header and payload using a secret key or private key, which ensures the token's integrity
 * How does a security filter chain work in Spring?
 * Why are roles useful in security?
 * How should passwords be stored?
