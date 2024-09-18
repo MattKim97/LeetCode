@@ -316,6 +316,12 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * Payload, contains the claims which are statements above the user or any other data - common claims includes userID, expiration time and roles
     * Signature, created by signing the header and payload using a secret key or private key, which ensures the token's integrity
 * How does a security filter chain work in Spring?
+    * a security filter chain, is a series of filters that intercept and process HTTP requests and responses to ensure that only authenticated and authorized users can access protected resources
+    1. Request enters the filter chain.
+    2. Authentication: User credentials or tokens are validated.
+    3. Authorization: User roles and permissions are checked against requested resources.
+    4. Exception handling: If any security issues arise (like failed authentication), they are handled.
+    5. Response passes back through the filter chain, and the security context is cleaned up if necessary.
 * Why are roles useful in security?
 * How should passwords be stored?
 
