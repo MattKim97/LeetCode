@@ -10,3 +10,7 @@
 # each variable has a data type, inferred by the value assigned to it
 # The standard input stream allows an application to capture text typed in the terminal. 
 # The standard output stream allows an application to print text to the terminal window.
+# Identifiers have hard rules. They are case sensitive. Whitespace is not permitted.
+# Class identifiers should be CamelCase.
+# Variable and function identifiers should be snake_case.
+# No single character identifiers.
