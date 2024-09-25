@@ -14,3 +14,75 @@
 # Class identifiers should be CamelCase.
 # Variable and function identifiers should be snake_case.
 # No single character identifiers.
+
+plates = []
+
+def run ():
+    choice = int(read_required_string("Menu\n================\n0. [Exit]\n1. Add a plate\n2. Print plates\n3. Remove plates\nSelect [0-3]: "))
+    while choice != 0:
+        if choice == 1:
+            add_plate(plates)
+        elif choice == 2:
+            print_plates(plates)
+        elif choice == 3:
+            remove_plates(plates)
+        else:
+            print("Invalid choice.")
+        choice = int(read_required_string("Menu\n================\n0. [Exit]\n1. Add a plate\n2. Print plates\n3. Remove plates\nSelect [0-3]: "))
+    print("Goodbye!")
+
+
+
+
+def read_required_string(prompt):
+    value = ""
+    while not value:
+        value = input(prompt).strip()
+    return value
+
+def add_plate(plates):
+    print("Add a plate")
+    print("==========")
+    prev_size = plates[-1] if plates else 0
+    size = int(read_required_string("Enter a plate size: "))
+
+    if(size <= 0):
+        print("Cannot add a plate of size 0 or less.")
+        return
+    
+    if prev_size == 0:
+        plates.append(size)
+        print("Success!")
+        return
+    if size > prev_size:
+        print(f"Cannot place a plate of size {size} on top of another plate of size {prev_size}.")
+        return
+    plates.append(size)
+    print("Success!")
+
+def print_plates(plates):
+    print("Print plates")
+    print("============")
+    if(not plates):
+        print("There are no stacked plates.")
+        return
+    for plate in reversed(plates):
+        print(plate)
+
+def remove_plates(plates):
+    print("Remove plates")
+    print("==========")
+    num_plates = int(read_required_string("How many plates to remove?: "))
+    if(num_plates <= 0):
+        print("Cannot remove 0 or less plates.")
+        return
+    if(num_plates > len(plates)):
+        print(f"Cannot remove more than {len(plates)} plates. You chose {num_plates}.")
+        return
+    while num_plates > 0:
+        plates.pop(-1)
+        num_plates -= 1
+    print("Success!")
+
+
+run()
