@@ -86,3 +86,6 @@ def remove_plates(plates):
 
 
 run()
+
+# works as expected
+# got a 8/8
