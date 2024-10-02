@@ -1,7 +1,10 @@
 # Interview Questions
 ## Fundamentals 
 1. What is Java, and how does it differ from other programming languages?
+    - Java is a compiled vs interpreted language, and Java is type-defined
 2. What is the difference between a primitive data type and an object in Java?
+    - A primitive data type is stored directly in memory 
+    - while an object holds a reference to data and can have behaviors (methods")
 3. Can you explain the concept of a Java class, and how it relates to object-oriented programming?
 4. How do you declare and use variables in Java, and what is the difference between local and global variables?
 5. What is the difference between an abstract class and an interface in Java, and when would you use each one?
