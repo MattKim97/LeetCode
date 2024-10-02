@@ -6,7 +6,11 @@
     - A primitive data type is stored directly in memory 
     - while an object holds a reference to data and can have behaviors (methods")
 3. Can you explain the concept of a Java class, and how it relates to object-oriented programming?
+    - A Java class is a blueprint or template that defines the structure and behavior of objects in OOP, classes encapsulate data and methods.
 4. How do you declare and use variables in Java, and what is the difference between local and global variables?
+    - You can declare variable by specifying the data type followed by the variable name
+    - Local variables are declared inside a method, constructor, block of code etc. Can only be accessible within that scope
+    - Global variables are are declared within the class but outside the method, they are accessible throughout the entire class
 5. What is the difference between an abstract class and an interface in Java, and when would you use each one?
 6. How do you handle exceptions in Java, and what is the purpose of try-catch blocks?
 7. What is the difference between static and non-static methods in Java, and when would you use each one?
