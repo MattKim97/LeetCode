@@ -15,7 +15,9 @@
     - Abstract class is a class that cannot be instantiated on its own and may contain abstract methods, (no body) mainly intended to be subclassed, allowing other classes to inherit its methods and variables
     - an interface is a completely abstract type that is used to define a contract, (a set of methods that a class MUST implement) can only contain abstract methods, just saying the what not the how.
 6. How do you handle exceptions in Java, and what is the purpose of try-catch blocks?
+    - handle exceptions by adding the exception to the method, purpose of try-catch blocks are to reduce errors
 7. What is the difference between static and non-static methods in Java, and when would you use each one?
+    - static is for to be used within the class, while non-static is to be used outside.
 8. How do you create and use arrays in Java, and what is the difference between a one-dimensional and multi-dimensional array?
 9. Can you explain the concept of polymorphism in Java, and how it relates to object-oriented programming?
 10. What are the four pillars of Java, and why are they important?
