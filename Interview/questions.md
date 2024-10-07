@@ -19,6 +19,10 @@
 7. What is the difference between static and non-static methods in Java, and when would you use each one?
     - static is for to be used within the class, while non-static is to be used outside.
 8. How do you create and use arrays in Java, and what is the difference between a one-dimensional and multi-dimensional array?
+    - int[] numbers; is how you declare an array,
+    - a one dimensional array  is a list of elements arranged in a single row
+    - int[][] matrix; declaration of a multi-dimensional array
+    - a multi-dimensional array can be seen as a array of arrays, most common type is a 2D array,
 9. Can you explain the concept of polymorphism in Java, and how it relates to object-oriented programming?
 10. What are the four pillars of Java, and why are they important?
 11. What is polymorphism, and how is it implemented in Java?
