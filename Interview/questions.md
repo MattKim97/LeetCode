@@ -29,6 +29,13 @@
     - Polymorphism promotes key OOP principles, like inheritance and abstraction, and facilitates dynamic method dispatch.
 10. What are the four pillars of Java, and why are they important?
 11. What is polymorphism, and how is it implemented in Java?
+    - Compile-time polymorphism (Method Overloading)
+    - Run-time polymorphism (Method Overriding)
+    - Compile-time polymorphism, also known as method overloading, occurs when multiple methods in the same class have the same name but different parameter lists
+    - Run-time polymorphism, also known as method overriding, occurs when a subclass provides a specific implementation of a method that is already defined in its superclass.
+    - Polymorphism allows us to use a single method or class in many forms, reducing code duplication.
+    -  Since methods can be overridden, changes made in a subclass do not affect the parent class. This makes the code more flexible and easier to maintain.
+    - It allows the addition of new classes with minimal changes to the existing code. For example, you can create new subclasses and override existing methods without modifying the parent class.
 12. Can you explain how inheritance works in Java and show me an example? 
 
 ## Interfaces 
