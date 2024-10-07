@@ -24,6 +24,9 @@
     - int[][] matrix; declaration of a multi-dimensional array
     - a multi-dimensional array can be seen as a array of arrays, most common type is a 2D array,
 9. Can you explain the concept of polymorphism in Java, and how it relates to object-oriented programming?
+    - Polymorphism is a key principe of OOP. 
+    - In Java, polymorphism allows a single method or operator to perform different tasks based on the object that it acts upon.
+    - Polymorphism promotes key OOP principles, like inheritance and abstraction, and facilitates dynamic method dispatch.
 10. What are the four pillars of Java, and why are they important?
 11. What is polymorphism, and how is it implemented in Java?
 12. Can you explain how inheritance works in Java and show me an example? 
