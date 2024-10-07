@@ -45,6 +45,10 @@
     -  Since methods can be overridden, changes made in a subclass do not affect the parent class. This makes the code more flexible and easier to maintain.
     - It allows the addition of new classes with minimal changes to the existing code. For example, you can create new subclasses and override existing methods without modifying the parent class.
 12. Can you explain how inheritance works in Java and show me an example? 
+    - Inheritance in Java is a mechanism where one class (the subclass or child class) inherits the properties and behaviors (fields and methods) of another class (the superclass or parent class). This allows the subclass to reuse the code in the superclass, and also to add new fields or methods, or override existing methods from the superclass.
+    - A subclass inherits all non-private fields and methods from the superclass.
+    - It can add new methods and fields.
+    - It can override methods in the superclass to provide its own implementation.
 
 ## Interfaces 
 1. What is an interface in Java, and how does it differ from a class?
