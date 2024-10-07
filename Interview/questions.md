@@ -28,6 +28,14 @@
     - In Java, polymorphism allows a single method or operator to perform different tasks based on the object that it acts upon.
     - Polymorphism promotes key OOP principles, like inheritance and abstraction, and facilitates dynamic method dispatch.
 10. What are the four pillars of Java, and why are they important?
+    1. Encapsulation
+        - Encapsulation refers to bundling the data (variables) and the methods (functions) that manipulate that data into a single unit, usually a class. It also means restricting access to certain details of an object and exposing only the necessary parts. This is often achieved through access modifiers like private, protected, and public.
+    2. Abstraction
+        - Abstraction involves hiding the implementation details and showing only the functionality to the user. In Java, this is achieved through abstract classes and interfaces. Abstraction focuses on what an object can do, not how it does it.
+    3. Inheritance
+        - Inheritance allows a new class (subclass or child class) to inherit the properties and methods of an existing class (superclass or parent class). This enables code reuse and the creation of hierarchical relationships between classes.
+    4. Polymorphism
+        - Polymorphism allows objects of different types to be treated as objects of a common superclass. It means "many forms," and it allows a single interface or method to represent different forms of behavior depending on the object that it interacts with.
 11. What is polymorphism, and how is it implemented in Java?
     - Compile-time polymorphism (Method Overloading)
     - Run-time polymorphism (Method Overriding)
