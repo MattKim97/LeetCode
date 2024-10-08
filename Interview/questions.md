@@ -60,6 +60,10 @@
     - this will allow them to follow the same contract without specifying how the behavior is implemented
     - can be very useful for payment processing and dealing with different types of payment
 4. What is the purpose of implementing an interface in Java, and how is it related to inheritance?
+    - The purpose of implementing an interface in Java is to define a contract that a class must adhere to, ensuring that the class provides specific behavior or functionality without dictating how it should be done. It allows you to achieve abstraction and polymorphism while promoting loose coupling between components.
+    - Interfaces provide a form of inheritance by specifying a set of methods that must be implemented by the class. This is known as interface inheritance or specification inheritance.
+    - Unlike class inheritance, where a subclass can inherit behavior, interfaces only provide the method signatures, leaving implementation up to the class.
+    - Interfaces enable multiple inheritance (through method contracts) while avoiding the complexities of class-based multiple inheritance, which Java doesn’t support.
 5. How do you declare and use methods in an interface in Java, and what is the difference between default and static methods?
 6. How do you create a class that implements an interface in Java, and what is the syntax for doing so?
 7. Can you explain the concept of multiple inheritance in Java, and how interfaces can be used to achieve it?
