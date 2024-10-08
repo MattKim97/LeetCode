@@ -56,6 +56,9 @@
 2. How do you declare an interface in Java, and what is the syntax for doing so?
     - by using the interface modifier, and then the Interface name, as well as the abstract methods and constants
 3. Can you give an example of a real-world scenario where interfaces might be useful in Java?
+    - an interface is particularly useful when you need to define a common behavior across different classes
+    - this will allow them to follow the same contract without specifying how the behavior is implemented
+    - can be very useful for payment processing and dealing with different types of payment
 4. What is the purpose of implementing an interface in Java, and how is it related to inheritance?
 5. How do you declare and use methods in an interface in Java, and what is the difference between default and static methods?
 6. How do you create a class that implements an interface in Java, and what is the syntax for doing so?
