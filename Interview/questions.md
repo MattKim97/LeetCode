@@ -52,6 +52,7 @@
 
 ## Interfaces 
 1. What is an interface in Java, and how does it differ from a class?
+    - an interface is a reference type similar to a class, it defines a contract for what  class can do, rather how it does it
 2. How do you declare an interface in Java, and what is the syntax for doing so?
 3. Can you give an example of a real-world scenario where interfaces might be useful in Java?
 4. What is the purpose of implementing an interface in Java, and how is it related to inheritance?
