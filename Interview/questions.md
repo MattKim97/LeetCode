@@ -65,6 +65,16 @@
     - Unlike class inheritance, where a subclass can inherit behavior, interfaces only provide the method signatures, leaving implementation up to the class.
     - Interfaces enable multiple inheritance (through method contracts) while avoiding the complexities of class-based multiple inheritance, which Java doesn’t support.
 5. How do you declare and use methods in an interface in Java, and what is the difference between default and static methods?
+    - in Java, when you declare a method within the interface, it must be implemented by classes that implement the interface.
+    - interfaces can have default and static methods
+    - default methods
+        1. can be overridden by the implementing class
+        2. provide a default implementation that classes can use or override
+        3. invoked on instances of the implementing class
+    - static methods
+        1. cannot be overridden
+        2. are not associated with any class instance, and are called on the interface itself
+        3. useful for utility methods, that are related to the interface, and do not need instance-specific behavior
 6. How do you create a class that implements an interface in Java, and what is the syntax for doing so?
 7. Can you explain the concept of multiple inheritance in Java, and how interfaces can be used to achieve it?
 8. What is the purpose of the "implements" keyword in Java, and how is it used to indicate that a class implements an interface?
