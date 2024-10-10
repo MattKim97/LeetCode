@@ -86,6 +86,11 @@
     - HOWEVER it is supported with interfaces, since interfaces only define abstract methods, there is no risk of conflicting method implementations
         - public class MyClass implements InterfaceA, InterfaceB (syntax)
 8. What is the purpose of the "implements" keyword in Java, and how is it used to indicate that a class implements an interface?
+    - the implements keyword is used to indicate that the class is implementing an interface
+    - the purpose of implements is that it defines a contract between the interface and the complementing class
+    - supports multiple inheritance
+        - Java doesn't support multiple inheritance of classes, but allows inheritance from multiple interfaces using the implements keyword
+    - polymorphism, by using the implements keyword, an object of the implementing class can be treated as an instance of the interface type, which allows for polymorphism
 9. Can you create an example of a Java program that uses interfaces to model a real-world relationship between objects?
 10. What is the difference between an abstract class and an interface?
 
