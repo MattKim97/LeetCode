@@ -76,7 +76,15 @@
         2. are not associated with any class instance, and are called on the interface itself
         3. useful for utility methods, that are related to the interface, and do not need instance-specific behavior
 6. How do you create a class that implements an interface in Java, and what is the syntax for doing so?
+    1. declare the class using the implements keyword, followed by the name of the interface.
+        - public interface MyInterface 
+    2. provide the implementations for all the abstract methods defined in the interface
+        - unless the class is abstract in which it doesn't need to be implemented immediately
 7. Can you explain the concept of multiple inheritance in Java, and how interfaces can be used to achieve it?
+    - it is the concept of when a class inherits from more than one parent class
+    - usually this concept is not allowed with classes in JAva in-order to avoid the Diamond Problem, where a class could inherit conflicting behavior from two or more parent classes
+    - HOWEVER it is supported with interfaces, since interfaces only define abstract methods, there is no risk of conflicting method implementations
+        - public class MyClass implements InterfaceA, InterfaceB (syntax)
 8. What is the purpose of the "implements" keyword in Java, and how is it used to indicate that a class implements an interface?
 9. Can you create an example of a Java program that uses interfaces to model a real-world relationship between objects?
 10. What is the difference between an abstract class and an interface?
