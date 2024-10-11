@@ -99,11 +99,17 @@
         * allows default behavior to be shared among subclasses through non-abstract methods
         * Can have fields (instance variables) and can define constructors to initialize them.
         * A class can inherit from only one abstract class (single inheritance).
+        * Methods and fields can have various access levels (private, protected, public).
+        * Used when classes share a common base with some shared implementation and you want to enforce a "is-a" relationship. It allows common logic to be reused.
+        * Can have constructors to initialize state.
     - Interface
         * interface should only declare abstract methods, in Java 8 can allow default and static methods
         * no instance fields or constructors, so behavior is mainly declared, not implemented
         * Cannot have instance fields. Fields in interfaces are implicitly public, static, and final (i.e., constants).
         * A class can implement multiple interfaces (multiple inheritance of type).
+        * Methods are implicitly public (default, static, and abstract methods). Fields are public static final.
+        * Used to define a contract or behavior that classes should follow, without enforcing how it is done. It allows for different types of objects to implement the same behavior.
+        * Cannot have constructors, as interfaces do not maintain state.
 ## Inheritance 
 1. What is inheritance in Java, and how does it relate to object-oriented programming?
 2. Can you give an example of a real-world scenario where inheritance might be useful in Java?
