@@ -427,6 +427,54 @@ public class DSA {
     // Time complexity: O(n)
     // Space complexity: O(n)
 
+    public int findMin(int[] nums) {
+        int left = 0;
+        int right = nums.length -1;
+
+        if (nums[left] <= nums[right]) {
+            return nums[left];
+        }
+
+        while(left <= right){
+            int mid = left + (right - left) / 2;
+
+            if(mid > 0 && nums[mid] <nums[mid-1]){
+                return nums[mid];
+            }
+
+            if(mid < nums.length - 1 && nums[mid] > nums[mid+1]){
+                return nums[mid+1];
+            }
+
+            if(nums[left] <= nums[mid]){
+                left = mid + 1;
+            } else {
+                right = mid - 1;
+            }
+
+        }
+
+    return -1;
+    }
+    // create the right and left points for the start and end of the arrays
+    // check to see if the array is rotated by checking to see if the first element is less than the last element if so has not been rotated return first element
+    // then while left is less than or equal to right
+    // find the mid point of the array 
+    // check if the mid point is less than the mid point -1 if so return the mid point
+    // cause if it is less than the mid point -1 then it should be the smallest element,
+        // because that is where the rotation happened in the sorted array
+    // otherwise check if the mid point is greater than the mid point +1
+        // if so, then it isn't sorted anymore, and the smallest element is the mid point +1
+    // otherwise check if the left is less than or equal to the mid point
+        // if so, then the left is less than the mid point, so the smallest element is to the right of the mid point
+        // this means that we are still in the sorted part of the array so we can move the left to the mid point +1
+    // otherwise the smallest element is to the left of the mid point
+        // so we can move the right to the mid point -1 to find the smallest element
+    // return -1 if the smallest element is not found
+    // Time complexity: O(log n)
+    // Space complexity: O(1)
+
+    
 
 
 
