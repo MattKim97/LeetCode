@@ -92,7 +92,15 @@
         - Java doesn't support multiple inheritance of classes, but allows inheritance from multiple interfaces using the implements keyword
     - polymorphism, by using the implements keyword, an object of the implementing class can be treated as an instance of the interface type, which allows for polymorphism
 9. Can you create an example of a Java program that uses interfaces to model a real-world relationship between objects?
+    - a vehicle and a car
 10. What is the difference between an abstract class and an interface?
+    1. Methods
+        - Abstract
+            * Can have both abstract methods(w/o a body) and concrete methods(with a body)
+            * allows default behavior to be shared among subclasses through non-abstract methods
+        - Interface
+            * interface should only declare abstract methods, in Java 8 can allow default and static methods
+            * no instance fields or constructors, so behavior is mainly declared, not implemented
 
 ## Inheritance 
 1. What is inheritance in Java, and how does it relate to object-oriented programming?
