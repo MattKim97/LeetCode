@@ -117,6 +117,7 @@
     - Inheritance in Java aligns with the OOP principle of Abstraction and Code Reusability
     - It forms a class hierarchy, which also supports polymorphism, allowing objects of different subclasses to be treated as objects of their superclass, enhancing the flexibility of the code.
 2. Can you give an example of a real-world scenario where inheritance might be useful in Java?
+    - by having a super/parent class, and then have the more defined sub-classes inherit methods and fields from the super class
 3. How do you define a superclass and a subclass in Java, and what is the relationship between the two?
 4. What is the difference between inheritance and composition in Java, and when would you choose one over the other?
 5. How do you use the "extends" keyword to create a subclass in Java, and what is the syntax for doing so?
