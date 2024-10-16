@@ -119,6 +119,8 @@
 2. Can you give an example of a real-world scenario where inheritance might be useful in Java?
     - by having a super/parent class, and then have the more defined sub-classes inherit methods and fields from the super class
 3. How do you define a superclass and a subclass in Java, and what is the relationship between the two?
+    - A superclass (or parent class) is the class whose properties and methods are inherited by another class.
+    - A subclass (or child class) is the class that inherits the properties and methods of the superclass.
 4. What is the difference between inheritance and composition in Java, and when would you choose one over the other?
 5. How do you use the "extends" keyword to create a subclass in Java, and what is the syntax for doing so?
 6. What is the purpose of the "super" keyword in Java, and when would you use it?
