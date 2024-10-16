@@ -112,6 +112,10 @@
         * Cannot have constructors, as interfaces do not maintain state.
 ## Inheritance 
 1. What is inheritance in Java, and how does it relate to object-oriented programming?
+    - a core concept of object-oriented programming (OOP) which allows one class to inherit the properties and behaviors from another class
+    - this mechanism promotes code reuse, and establishes a hierarchical relationship between classes
+    - Inheritance in Java aligns with the OOP principle of Abstraction and Code Reusability
+    - It forms a class hierarchy, which also supports polymorphism, allowing objects of different subclasses to be treated as objects of their superclass, enhancing the flexibility of the code.
 2. Can you give an example of a real-world scenario where inheritance might be useful in Java?
 3. How do you define a superclass and a subclass in Java, and what is the relationship between the two?
 4. What is the difference between inheritance and composition in Java, and when would you choose one over the other?
