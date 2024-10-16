@@ -53,8 +53,8 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * It is a blueprint for classes, and how to implement the class, it specifies what the class must have, but not the how therefore only contained abstract methods
 * What are the pillars of OOP?
     * Abstraction - simplifying complex systems by modeling classes and hiding complex implementation details, and only showing the essential features of an object
-    * Encapsulation - bundling data and methods to operate on the data into a single class. Also restrict direct access to some of the objet's inner-workings, to prevent modification or unauthorized access
-    * Polymorphism - ability of object to take on many forms, allows a single method or object to behavior differently depending on it's context
+    * Encapsulation - bundling data and methods to operate on the data into a single class. Also restrict direct access to some of the object's inner-workings, to prevent modification or unauthorized access
+    * Polymorphism - ability of object to take on many forms, allows a single method or object to behave differently depending on it's context
     * Inheritance - mechanism by which classes can inherit attributes or methods of another class, allowing for class and code reuse, and creation of hierarchical relationship between classes
 
 * How does the Single Responsibility Principle relate to Java classes?
@@ -73,7 +73,7 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * facilitates continuous integration and deployment (CI/CD)
     * reduces technical debt
 * How does an `ArrayList<E>` collection type compare to an array?
-    *  Arrays fixed length, initialized on creation
+    * Arrays have a fixed length and length is initialized on creation
     * ArrayList dynamically resizes itself
     * Arrays are faster to access and have no overhead more memory efficient
     * ArrayList slightly slower, due to dynamic resizing and have a memory overhead because it requires internal bookkeeping to dynamically resize itself
