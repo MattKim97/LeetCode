@@ -91,7 +91,7 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * an event that occurs during the execution of the app that will disrupt the normal flow of instructions, typically caused by errors or unexpected conditions such as dividing by zero, out of bounds array index, or opening a file that doesn't exists
 * What is the difference between a checked and unchecked exception?
     * checked exceptions are exceptions that must be must be caught or declared in the method where they might be thrown such as IOException SQLException etc
-    *  a unchecked exception are those that do not need to be declared or caught, typically indicated a programming error such as NullPointerException, ArrayIndexOutOfBoundsException etc.
+    * a unchecked exception are those that do not need to be declared or caught, typically indicated a programming error such as NullPointerException, ArrayIndexOutOfBoundsException etc.
 * What is an enumeration?
     *  A specific type of data that represents a group of unchangeable variables, useful when we need a fixed set of related constants
 * When should enums be used? When shouldn't they be used?
@@ -100,9 +100,9 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * An application layer are the logical separations of concerns within a software application such as UI layer, Service layer, and the Business layer
     *  while classes are blueprints for creating instances or objects, and packages are used to contain related layers or classes together
 * What are the three layers in a minimal three layer architecture?
-    *  Presentation layer or UI layer, responsible for interacting with the layer
+    *  Presentation layer or UI layer, responsible for interacting with the user
     *  The Business Logic layer, service layer, contains the core functionality and business rules of the application, processes user data received from the presentation layer, and applies the necessary business logic before passing it to the data layer
-    *  The Data Access Layer (repository) - responsible for data storage and retrieval, interacts with the database performing CRUd operations and ensures the data's integrity
+    *  The Data Access Layer (repository) - responsible for data storage and retrieval, interacts with the database performing CRUD operations and ensures the data's integrity
 * What is the repository pattern?
     *  a design pattern used to abstract and encapsulate the data access logic within an app, provides a way to separate the data access logic from the business logic, which allows for a more organized and manageable codebase
     *  Encapsulation - hides the details of data access from the rest of the app, the business logic layer does not need to know how the data is stored or retrieved.
@@ -114,10 +114,10 @@ _Assume that all of the questions with this section pertain to Java (unless othe
    *  A design pattern used to separate the concerns of an application into three interconnected components, this helps organize code, and make it easier to manage and extend, and maintain
    *  Model - represents the applications's data nad business logic, directly manages the data, logic and rules of the applications
    *  View - represents the UI and how the data is presented to the user, renders the model data in a form that the user can interact with
-   *  Controllers, acts as an in-between the model and view, processes the user input, and interacts with the model to retrieve or update the data, and returns the appropriate view to the suer 
+   *  Controllers, acts as an in-between the model and view, processes the user input, and interacts with the model to retrieve or update the data, and returns the appropriate view to the user 
 * What is dependency injection?
     * (DI) is a design pattern that causes Inversion of Control (IoC) involves providing an object with its dependencies rather than have the object create or locate them itself
-    * this makes the system more modulate, easier to test, and more maintainable
+    * this makes the system more modular, easier to test, and more maintainable
 * How does dependency injection help you to create loosely coupled classes?
     * by providing an object with its dependencies rather than have the object create or locate them itself
 
