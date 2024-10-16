@@ -20,7 +20,7 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * Boolean
     * Char
 * What are some of the ways that a reference type differs from a primitive type?
-    * A primitive type stores teh data directly into memory, which makes them more memory-efficient and faster to access, while a reference type stores a memory address, that references the actual data in memory, this allows reference types to reference complex objects.
+    * A primitive type stores the data directly into memory, which makes them more memory-efficient and faster to access, while a reference type stores a memory address, that references the actual data in memory, this allows reference types to reference complex objects.
 * When using a debugger, what does it mean to step into a method?
     * To stop or move execution to the first breakpoint of the debug
 * What are the parts of a method?
