@@ -243,9 +243,9 @@ _Assume that all of the questions with this section pertain to Java (unless othe
 * What is a closure in JavaScript?
     * a closure is a feature where a inner function has access to the variables from its outer(enclosing) functions, even after the outer function has finished executing, this is to allow the inner function to remember the environment in which it wa created.
     * A closure has access to:
-    * Variables defined within its own scope.
-    * Variables defined in its outer function’s scope.
-    * Global variables.
+        - Variables defined within its own scope.
+        - Variables defined in its outer function’s scope.
+        - Global variables.
 * What are some differences between Java and JavaScript?
     * Java is a compiled language while JavaScript is a interpreted language
     * oop language, allows developers to write code that can run on multiple platforms (write once run anywhere) mostly used for backend development
