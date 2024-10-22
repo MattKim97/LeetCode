@@ -103,7 +103,7 @@
         * Used when classes share a common base with some shared implementation and you want to enforce a "is-a" relationship. It allows common logic to be reused.
         * Can have constructors to initialize state.
     - Interface
-        * interface should only declare abstract methods, in Java 8 can allow default and static methods
+        * interface should only declare abstract methods, in Java 8 default and static methods are allowed
         * no instance fields or constructors, so behavior is mainly declared, not implemented
         * Cannot have instance fields. Fields in interfaces are implicitly public, static, and final (i.e., constants).
         * A class can implement multiple interfaces (multiple inheritance of type).
