@@ -259,7 +259,7 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * When used in event handlers, this refers to the element that triggered the event.
     * You can explicitly set the value of this using call(), apply(), or bind().
 * Can you pass a function as an argument to another function?
-    * yes in JS and many other programming languages, you can pass a function as an argument to another function, functions in JS are first-class objects, meaning they are treated like any other value, passed as arguments, returned from other functions, and can be stored in variables, commonly used in callbacks
+    * Yes, in JS and many other programming languages, you can pass a function as an argument to another function, functions in JS are first-class objects, meaning they are treated like any other value, passed as arguments, returned from other functions, and can be stored in variables, commonly used in callbacks
 * In JavaScript, what is the difference between null and undefined?\
     * undefined is a primitive type, represents a variables that has been declared but not yet assigned a value
     * null is also a primitive type, but denotes nothing or empty, represents itself as a special value of nothingness
@@ -286,7 +286,7 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * Babel is a JS compiler that is used to convert modern JS (such as newer ECMAScript and JSX) into a form that can be understood by older browsers and environments.
     * Babel boiled down basically ensures that your JS code works across multiple different browsers, even if they do not support the newest version of JS.
 * What are some differences between ES6 syntax from ES5?
-    * Let and Const vs Var
+    * Let and Const vs Var 
     * Arrow functions - const add = (a, b) => a + b;
     * Template literals - const greeting = `Hello ${name}!`;
     * Classes
@@ -309,7 +309,7 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     * Authorization determines what the authenticated user is allowed to do
 * Authentication needs to come first because the system must know who the user is before determining what they are allowed to do.
 * What is JWT?
-    * a JSON Web Token, used tor securely transmitting information between parties as a JSON object.
+    * a JSON Web Token, used for securely transmitting information between parties as a JSON object.
 * What is the structure of a JWT?
     * Consists of three parts separated by dots
     * Header, containing the metadata about the token, including type of token and the signing algorithm
@@ -332,7 +332,7 @@ _Assume that all of the questions with this section pertain to Java (unless othe
     7. Cross-Application Consistency
 * How should passwords be stored?
     * Store them using hashed passwords
-    * Salt and peppering the passwords
+    * Salt and peppering the passwords before hashing them
     * Never store plain-text passwords: Passwords should never be stored as plain text in any system, as this would make it easy for attackers to compromise all user accounts in case of a breach.
     * No reversible encryption: Avoid encrypting passwords with symmetric or reversible encryption. If the encryption key is compromised, all passwords can be decrypted. Hashing is one-way and doesn't allow retrieval of the original password.
     * Use a password policy: Ensure that users create strong passwords by enforcing minimum length, complexity, and character variety (e.g., numbers, symbols, and upper/lowercase letters).
