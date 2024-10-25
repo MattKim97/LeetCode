@@ -506,5 +506,17 @@ public class DSA {
     // }
 
 
+    // check if the root is null
+    // create a queue to store the nodes
+    // add the root to the queue
+    // create a variable to store the depth
+    // iterate through the queue
+    // get the size of the level
+    // increment the depth
+    // iterate through the level
+    // add the left and right nodes to the queue
+    // return the depth
+    // Time complexity: O(n)
+    // Space complexity: O(n)
 
 }
