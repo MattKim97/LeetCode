@@ -150,6 +150,8 @@
     - can use private modifier, does not allow and fields or methods in a superclass from within the subclasses
     - use final modifier for methods, prevents subclasses from overriding it
 9. What is the diamond problem in Java, and how can it be resolved using interfaces?
+    - The diamond problem in Java arises in the context of multiple inheritance, particularly when a class inherits from two or more classes that have a method with the same signature. 
+    - This creates ambiguity regarding which superclass's method should be invoked. The term "diamond" comes from the shape of the inheritance diagram:
 10. Can you give an example of a Java class hierarchy that uses inheritance to model a real-world relationship between objects?
 
 
