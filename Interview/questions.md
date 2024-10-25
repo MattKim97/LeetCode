@@ -146,6 +146,9 @@
 
 
 8. How do you prevent a subclass from inheriting a method or variable from its superclass in Java?
+    - one can not directly prevent a subclass
+    - can use private modifier, does not allow and fields or methods in a superclass from within the subclasses
+    - use final modifier for methods, prevents subclasses from overriding it
 9. What is the diamond problem in Java, and how can it be resolved using interfaces?
 10. Can you give an example of a Java class hierarchy that uses inheritance to model a real-world relationship between objects?
 
