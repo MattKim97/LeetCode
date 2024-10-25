@@ -129,6 +129,11 @@
     - this keyword is used to establish an inheritance relationship between two classes
     - FORMAT: class Subclass extends Superclass{}
 6. What is the purpose of the "super" keyword in Java, and when would you use it?
+    - the main purpose of the super keyword, is to refer to the superclass from within the subclass, it allows a way for a subclass to access members, of it's super class
+    - can use it for three main reasons
+        1. Accessing superclass methods
+        2. Accessing superclass fields
+        3. Calling the superclass's constructor
 7. Can you explain the concept of method overriding in Java, and how it is related to inheritance?
 8. How do you prevent a subclass from inheriting a method or variable from its superclass in Java?
 9. What is the diamond problem in Java, and how can it be resolved using interfaces?
