@@ -122,6 +122,8 @@
     - A superclass (or parent class) is the class whose properties and methods are inherited by another class.
     - A subclass (or child class) is the class that inherits the properties and methods of the superclass.
 4. What is the difference between inheritance and composition in Java, and when would you choose one over the other?
+    - Inheritance allows a class to inherit properties and behaviors from another class, establishing a is-a relationship
+    - While Composition involves creating complex types by combining objects of other types, instead of inheriting a class,an object contains other objects, to achieve its intended functionality, this is a has-a relationship
 5. How do you use the "extends" keyword to create a subclass in Java, and what is the syntax for doing so?
 6. What is the purpose of the "super" keyword in Java, and when would you use it?
 7. Can you explain the concept of method overriding in Java, and how it is related to inheritance?
