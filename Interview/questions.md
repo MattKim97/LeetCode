@@ -135,6 +135,16 @@
         2. Accessing superclass fields
         3. Calling the superclass's constructor
 7. Can you explain the concept of method overriding in Java, and how it is related to inheritance?
+    - Method overriding, is when a subclass provides a specific implantation a method that is already defined within the parent class
+    - this allows the subclass to customize or modify the behavior of a method that is inherited from the superclass
+    - Key Points
+        1. Same method signature, - same name, return type, and parameters
+        2. Access Modifier, must be the same or more accessible than superclass
+        3. Annotations, good practice to denote this method is overridden using the @override Annotations
+        4. Polymorphism, enables runtime polymorphism
+        5. Constructors cannot be overridden, because these are not inherited by the subclasses only accessed.
+
+
 8. How do you prevent a subclass from inheriting a method or variable from its superclass in Java?
 9. What is the diamond problem in Java, and how can it be resolved using interfaces?
 10. Can you give an example of a Java class hierarchy that uses inheritance to model a real-world relationship between objects?
