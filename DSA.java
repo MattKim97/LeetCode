@@ -1,11 +1,15 @@
 import java.util.Arrays;
 import java.util.HashMap;
 import java.util.HashSet;
+import java.util.LinkedList;
 import java.util.Map;
+import java.util.Queue;
 import java.util.Set;
 import java.util.List;
 import java.util.ArrayList;
 import java.util.Stack;
+
+import javax.swing.tree.TreeNode;
 
 public class DSA {
 
@@ -438,7 +442,7 @@ public class DSA {
         while(left <= right){
             int mid = left + (right - left) / 2;
 
-            if(mid > 0 && nums[mid] <nums[mid-1]){
+            if(mid > 0 && nums[mid] < nums[mid-1]){
                 return nums[mid];
             }
 
@@ -474,10 +478,32 @@ public class DSA {
     // Time complexity: O(log n)
     // Space complexity: O(1)
 
-    
+    //  public int maxDepth(TreeNode root) {
+    //   if (root == null) {
+    //         return 0;
+    //     }
 
+    //     Queue<TreeNode> queue = new LinkedList<>();
+    //     queue.offer(root);
+    //     int depth = 0;
 
+    //     while (!queue.isEmpty()) {
+    //         int levelSize = queue.size();
+    //         depth++;
 
+    //         for (int i = 0; i < levelSize; i++) {
+    //             TreeNode currentNode = queue.poll();
+
+    //             if (currentNode.left != null) {
+    //                 queue.offer(currentNode.left);
+    //             }
+    //             if (currentNode.right != null) {
+    //                 queue.offer(currentNode.right);
+    //             }
+    //         }
+    //     }
+    //     return depth;
+    // }
 
 
 
