@@ -519,4 +519,31 @@ public class DSA {
     // Time complexity: O(n)
     // Space complexity: O(n)
 
+
+    // public boolean isSameTree(TreeNode p, TreeNode q) {
+        
+    //     if(p == null && q == null){
+    //         return true;
+    //     }
+
+    //      if(p == null || q == null){
+    //         return false;
+    //     }
+
+    //     if(p.val != q.val){
+    //         return false;
+    //     }
+
+    //     return isSameTree(p.left,q.left) && isSameTree(p.right,q.right);
+    // }
+
+    // check if both nodes are null
+    // check if one of the nodes is null
+    // check if the values of the nodes are the same
+    // recursively call the function on the left and right nodes
+    // return the result
+    // Time complexity: O(n)
+    // Space complexity: O(n)
+    
+
 }
