@@ -153,6 +153,7 @@
     - The diamond problem in Java arises in the context of multiple inheritance, particularly when a class inherits from two or more classes that have a method with the same signature. 
     - This creates ambiguity regarding which superclass's method should be invoked. The term "diamond" comes from the shape of the inheritance diagram:
 10. Can you give an example of a Java class hierarchy that uses inheritance to model a real-world relationship between objects?
+    - class hierarchy would be like a Vehicle parent class, and Car,Truck, and Motorcycle be the subclasses
 
 
 ## Java Collections
