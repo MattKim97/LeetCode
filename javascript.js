@@ -38,3 +38,13 @@ const checkWinner = function(avgDolphins,avgKoalas){
 checkWinner(scoreDolphins,scoreKoalas)
 checkWinner(scoreDolphins2,scoreKoalas2)
 checkWinner(scoreDolphins3,scoreDolphins3)
+
+const arrayCreater = () => {
+    const arr = []
+    for(let i = 0; i < 10; i++){
+        arr.push(i)
+    }
+    return arr
+}
+
+console.log(arrayCreater())
