@@ -48,3 +48,12 @@ const arrayCreater = () => {
 }
 
 console.log(arrayCreater())
+
+
+const mergeSort = (arr1,arr2) => {
+    return arr1.concat(arr2).sort((a,b) => a - b)
+}
+
+console.log(mergeSort([1,2,3],[4,5,6]))
+console.log(mergeSort([1,3,5],[2,4,6]))
+console.log(mergeSort([1,3,5],[2,4,6,8,9,10,11,12,13,14,15,16,17,18,19,20]))
