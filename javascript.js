@@ -75,3 +75,22 @@ const bfs = (graph, start) => {
     }
     return visited
 }
+
+const dfs = (graph, start) => {
+    const visited = []
+    const stack = []
+    stack.push(start)
+    while(stack.length > 0){
+        const node = stack.pop()
+        if(!visited.includes(node)){
+            visited.push(node)
+            const neighbors = graph[node]
+            for(let neighbor of neighbors){
+                stack.push(neighbor)
+            }
+        }
+    }
+    return visited
+}
+
+
