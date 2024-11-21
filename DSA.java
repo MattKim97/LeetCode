@@ -6,6 +6,7 @@ import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
 import java.util.List;
+import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.Stack;
 
@@ -632,8 +633,44 @@ public class DSA {
     // return F if the grade is less than 70
     // Time complexity: O(1)
     // Space complexity: O(1)
-    
 
+        static String DivideNumber(String numerator, String denominator)
+       {
+            String result;
+            
+            double n = 0, d = 0;
+              
+            try{
+             n = Double.parseDouble(numerator);
+             d = Double.parseDouble(denominator);
+            } catch (NumberFormatException e){
+                return "bad data";
+            }
+            
+            
+            if(d == 0){
+                return "infinity";
+            }
+            
+            double division = (n/d);
+            
+            DecimalFormat df = new DecimalFormat("#.##");
+            result = df.format(division);
+            return result;
+       }
+
+    // create a function to divide two numbers
+    // create variables to store the numerator and denominator
+    // try to parse the numerator and denominator
+    // catch the exception if the data is bad
+    // check if the denominator is 0
+    // return infinity if the denominator is 0
+    // calculate the division
+    // format the result to two decimal places
+    // return the result
+    // Time complexity: O(1)
+    // Space complexity: O(1)
+    
 
     
 
