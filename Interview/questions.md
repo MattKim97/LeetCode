@@ -8,11 +8,11 @@
 3. Can you explain the concept of a Java class, and how it relates to object-oriented programming?
     - A Java class is a blueprint or template that defines the structure and behavior of objects in OOP, classes encapsulate data and methods.
 4. How do you declare and use variables in Java, and what is the difference between local and global variables?
-    - You can declare variable by specifying the data type followed by the variable name
+    - You can declare variable by specifying the data type followed by the variable's name
     - Local variables are declared inside a method, constructor, block of code etc. Can only be accessible within that scope
     - Global variables are are declared within the class but outside the method, they are accessible throughout the entire class
 5. What is the difference between an abstract class and an interface in Java, and when would you use each one?
-    - Abstract class is a class that cannot be instantiated on its own and may contain abstract methods, (no body) mainly intended to be subclassed, allowing other classes to inherit its methods and variables
+    - An Abstract class is a class that cannot be instantiated on its own and may contain abstract methods, (no body) mainly intended to be subclassed, allowing other classes to inherit its methods and variables
     - an interface is a completely abstract type that is used to define a contract, (a set of methods that a class MUST implement) can only contain abstract methods, just saying the what not the how.
 6. How do you handle exceptions in Java, and what is the purpose of try-catch blocks?
     - handle exceptions by adding the exception to the method, purpose of try-catch blocks are to reduce errors
