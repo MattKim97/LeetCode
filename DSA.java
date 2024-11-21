@@ -670,7 +670,34 @@ public class DSA {
     // return the result
     // Time complexity: O(1)
     // Space complexity: O(1)
-    
+
+
+    // class BorrowerValidator
+    // {   
+    //     public Boolean IsValid(Borrower borrower)
+    //     {
+    //        if(borrower.Name == null || borrower.Name.trim().isEmpty() ){ 
+    //            return false;
+    //        } 
+           
+    //        if(borrower.Dti >=25){
+    //            return false;
+    //        }
+           
+           
+    //        if(borrower.Ltv >= 80){
+    //            return false;
+    //        }
+           
+           
+    //        if(borrower. OwnedProperties >=3){
+    //            return false;
+    //        }
+           
+    //        return true;
+    //     }            
+            
+    //     }
 
     
 
