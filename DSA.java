@@ -569,6 +569,46 @@ public class DSA {
     // Time complexity: O(n)
     // Space complexity: O(n)
 
+    //     public static void main(String args[] ) throws Exception {
+    //         /* Do not modify or remove this line */
+    //     Ping(0);
+    // }
+
+    // public static void Ping(int i){
+    // i += 1;
+    
+    // if(i > 500){
+    //     return;
+    // }
+    // Pong(i);
+    // }
+
+    // public static void Pong(int i){
+    // i += 10;
+    
+    // if(i > 500){
+    //     return;
+    // }
+    
+    // System.out.println(i);
+    
+    // Ping(i);
+    // }
+
+    // create a function to increment the value of i
+    // check if i is greater than 500
+    // return if i is greater than 500
+    // call the pong function
+    // create a function to increment the value of i
+    // check if i is greater than 500
+    // return if i is greater than 500
+    // print the value of i
+    // call the ping function
+    // Time complexity: O(n)
+    // Space complexity: O(1)
+    
+
+
     
 
 
