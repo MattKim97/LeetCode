@@ -606,6 +606,32 @@ public class DSA {
     // call the ping function
     // Time complexity: O(n)
     // Space complexity: O(1)
+
+
+    public static String CalculateGradeLetter(double grade){
+        if(grade >= 90){
+            return "A";
+        }
+        else if(grade >= 80){
+           return "B"; 
+        }
+          else if(grade >= 70){
+            return "C";
+        }
+        else{
+            return "F";
+        }
+    }
+    
+    // check if the grade is greater than or equal to 90
+    // return A if the grade is greater than or equal to 90
+    // check if the grade is greater than or equal to 80
+    // return B if the grade is greater than or equal to 80
+    // check if the grade is greater than or equal to 70
+    // return C if the grade is greater than or equal to 70
+    // return F if the grade is less than 70
+    // Time complexity: O(1)
+    // Space complexity: O(1)
     
 
 
