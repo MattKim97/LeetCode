@@ -39,7 +39,7 @@
 11. What is polymorphism, and how is it implemented in Java?
     - Compile-time polymorphism (Method Overloading)
     - Run-time polymorphism (Method Overriding)
-    - Compile-time polymorphism, also known as method overloading, occurs when multiple methods in the same class have the same name but different parameter lists
+    - Compile-time polymorphism - also known as method overloading, occurs when multiple methods in the same class have the same name but different parameter lists
     - Run-time polymorphism, also known as method overriding, occurs when a subclass provides a specific implementation of a method that is already defined in its superclass.
     - Polymorphism allows us to use a single method or class in many forms, reducing code duplication.
     -  Since methods can be overridden, changes made in a subclass do not affect the parent class. This makes the code more flexible and easier to maintain.
