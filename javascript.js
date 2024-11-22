@@ -157,3 +157,12 @@ const selectionsort = (arr) => {
     return arr
 }
 
+const graph = {
+    0: [1,2],
+    1: [2],
+    2: [0,3],
+    3: [3]
+}
+
+console.log(bfs(graph,2))
+console.log(dfs(graph,2))
