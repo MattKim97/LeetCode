@@ -166,3 +166,4 @@ const graph = {
 
 console.log(bfs(graph,2))
 console.log(dfs(graph,2))
+
