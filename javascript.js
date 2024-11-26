@@ -167,3 +167,8 @@ const graph = {
 console.log(bfs(graph,2))
 console.log(dfs(graph,2))
 
+
+console.log(bubblesort([5,4,3,2,1]))
+console.log(quicksort([5,4,3,2,1]))
+console.log(insertionsort([5,4,3,2,1]))
+console.log(selectionsort([5,4,3,2,1]))
