@@ -212,3 +212,7 @@ const binarySearchRecursive = (arr, target, left = 0, right = arr.length - 1) =>
         return binarySearchRecursive(arr, target, left, mid - 1)
     }
 }
+
+console.log(binarySearchRecursive([1,2,3,4,5],3))
+console.log(binarySearchRecursive([1,2,3,4,5],6))
+console.log(binarySearchRecursive([1,2,3,4,5],0))
