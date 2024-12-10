@@ -229,3 +229,24 @@ const reverseLinkedList = (head) => {
     return prev
 }
 
+// first assign prev to null, then current to head
+// while current is not null, assign next to current.next
+// then assign current.next to prev
+// then assign prev to current
+// then assign current to next
+// return prev
+
+const reverseLinkedListRecursive = (head, prev = null) => {
+    if(head === null){
+        return prev
+    }
+    let next = head.next
+    head.next = prev
+    return reverseLinkedListRecursive(next, head)
+}
+
+// if head is null, return prev
+// assign next to head.next
+// assign head.next to prev
+// return reverseLinkedListRecursive(next, head)
+    
