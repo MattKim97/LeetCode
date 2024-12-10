@@ -699,6 +699,24 @@ public class DSA {
             
     //     }
 
+
+    
+    // create a class to validate the borrower
+    // create a function to check if the borrower is valid
+    // check if the borrower name is null or empty
+    // return false if the borrower name is null or empty
+    // check if the borrower dti is greater than or equal to 25
+    // return false if the borrower dti is greater than or equal to 25
+    // check if the borrower ltv is greater than or equal to 80
+    // return false if the borrower ltv is greater than or equal to 80
+    // check if the borrower owned properties is greater than or equal to 3
+    // return false if the borrower owned properties is greater than or equal to 3
+    // return true if the borrower is valid
+    // Time complexity: O(1)
+    // Space complexity: O(1)
+
+    
+
     
 
 
