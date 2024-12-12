@@ -311,3 +311,15 @@ const merge = (left,right) => {
 // assign slow.next to null
 // return mid
 
+// assign dummy to new ListNode(0)
+// assign current to dummy
+// while left is not null and right is not null
+// if left.val is less than right.val
+// assign current.next to left, left to left.next
+// else assign current.next to right, right to right.next
+// assign current to current.next
+// if left is not null, assign current.next to left
+// if right is not null, assign current.next to right
+
+// return dummy.next
+
