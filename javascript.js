@@ -358,3 +358,7 @@ const quickSortLinkedList = (head) => {
 }
 
 // if head is null or head.next is null, return head
+// assign pivot to head
+// assign current to head.next
+// assign less to null, greater to null
+// while current is not null
