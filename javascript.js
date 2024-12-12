@@ -323,3 +323,38 @@ const merge = (left,right) => {
 
 // return dummy.next
 
+
+const quickSortLinkedList = (head) => {
+    if(head === null || head.next === null){
+        return head
+    }
+    let pivot = head
+    let current = head.next
+    let less = null
+    let greater = null
+    while(current !== null){
+        let next = current.next
+        if(current.val < pivot.val){
+            current.next = less
+            less = current
+        } else {
+            current.next = greater
+            greater = current
+        }
+        current = next
+    }
+    let left = quickSortLinkedList(less)
+    let right = quickSortLinkedList(greater)
+    pivot.next = right
+    if(left === null){
+        return pivot
+    }
+    let tail = left
+    while(tail.next !== null){
+        tail = tail.next
+    }
+    tail.next = pivot
+    return left
+}
+
+// if head is null or head.next is null, return head
