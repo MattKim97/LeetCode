@@ -302,3 +302,12 @@ const merge = (left,right) => {
 // assign left to mergeSortLinkedList(head)
 // assign right to mergeSortLinkedList(mid)
 // return merge(left,right)
+
+// assign slow to head, fast to head
+// while fast.next is not null and fast.next.next is not null
+// assign slow to slow.next, fast to fast.next.next
+
+// assign mid to slow.next
+// assign slow.next to null
+// return mid
+
