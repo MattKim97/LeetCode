@@ -249,4 +249,17 @@ const reverseLinkedListRecursive = (head, prev = null) => {
 // assign next to head.next
 // assign head.next to prev
 // return reverseLinkedListRecursive(next, head)
+
+
+
+const mergeSortLinkedList = (head) => {
+    if(head === null || head.next === null){
+        return head
+    }
+    let mid = getMiddle(head)
+    let left = mergeSortLinkedList(head)
+    let right = mergeSortLinkedList(mid)
+    return merge(left,right)
+}
+
     
