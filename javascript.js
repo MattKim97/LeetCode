@@ -262,4 +262,39 @@ const mergeSortLinkedList = (head) => {
     return merge(left,right)
 }
 
-    
+const getMiddle = (head) => {
+    let slow = head
+    let fast = head
+    while(fast.next !== null && fast.next.next !== null){
+        slow = slow.next
+        fast = fast.next.next
+    }
+    let mid = slow.next
+    slow.next = null
+    return mid
+}
+
+
+const merge = (left,right) => {
+    let dummy = new ListNode(0)
+    let current = dummy
+    while(left !== null && right !== null){
+        if(left.val < right.val){
+            current.next = left
+            left = left.next
+        } else {
+            current.next = right
+            right = right.next
+        }
+        current = current.next
+    }
+    if(left !== null){
+        current.next = left
+    }
+    if(right !== null){
+        current.next = right
+    }
+    return dummy.next
+}
+
+
