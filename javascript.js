@@ -297,4 +297,8 @@ const merge = (left,right) => {
     return dummy.next
 }
 
-
+// if head is null or head.next is null, return head
+// assign mid to getMiddle(head)
+// assign left to mergeSortLinkedList(head)
+// assign right to mergeSortLinkedList(mid)
+// return merge(left,right)
