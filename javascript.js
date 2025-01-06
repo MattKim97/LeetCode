@@ -394,7 +394,7 @@ for (let i = 0; i < employees; i++){
   let lastName = prompt("Enter last name");
   let salary = prompt("Enter salary")
   let employeeInfo = {firstName: firstName, lastName: lastName, salary: salary};
-  objectArray. push(employeeInfo)
+  objectArray.push(employeeInfo)
 }
 return objectArray
 }
